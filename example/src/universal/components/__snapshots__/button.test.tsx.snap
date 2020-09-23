@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button flag off 1`] = `
+<DocumentFragment>
+  Button is disabled
+</DocumentFragment>
+`;
+
+exports[`button flag on 1`] = `
+<DocumentFragment>
+  <button />
+</DocumentFragment>
+`;
