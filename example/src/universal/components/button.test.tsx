@@ -1,8 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import { mockFlags } from '../../../ld-mock.js'
+import { mockFlags } from 'jest-launchdarkly-mock'
 import Button from './button'
 
 describe('button', () => {
@@ -12,9 +10,9 @@ describe('button', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
-  // it('flag off', () => {
-  //   mockFlags({ 'dev-test-flag': false })
-  //   const { asFragment } = render(<Button />)
-  //   expect(asFragment()).toMatchSnapshot()
-  // })
+  it('flag off', () => {
+    mockFlags({ 'dev-test-flag': false })
+    const { asFragment } = render(<Button />)
+    expect(asFragment()).toMatchSnapshot()
+  })
 })
