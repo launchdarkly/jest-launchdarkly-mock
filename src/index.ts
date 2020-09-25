@@ -1,8 +1,11 @@
+jest.mock('launchdarkly-react-client-sdk', () => ({ useFlags: jest.fn() }))
+
 import kebabCase from 'lodash.kebabcase'
 import camelCase from 'lodash.camelcase'
 import { LDFlagSet } from 'launchdarkly-js-sdk-common'
+import { useFlags } from 'launchdarkly-react-client-sdk'
 
-const mockUseFlags = jest.fn()
+const mockUseFlags = useFlags as jest.Mock
 
 export const mockFlags = (flags: LDFlagSet) => {
   mockUseFlags.mockImplementation(() => {
@@ -16,5 +19,3 @@ export const mockFlags = (flags: LDFlagSet) => {
     return result
   })
 }
-
-export const init = (j: typeof jest) => j.mock('launchdarkly-react-client-sdk', () => ({ useFlags: mockUseFlags }))
