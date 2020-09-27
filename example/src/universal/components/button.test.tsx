@@ -1,11 +1,12 @@
 import React from 'react'
-import { render } from '@testing-library/react'
-import { mockFlags } from 'jest-launchdarkly-mock'
+import { render, fireEvent } from '@testing-library/react'
+import { mockFlags, ldClientMock } from 'jest-launchdarkly-mock'
+
 import Button from './button'
 
 describe('button', () => {
   it('flag on', () => {
-    mockFlags({ 'dev-test-flag': true })
+    mockFlags({ devTestFlag: true })
     const { asFragment } = render(<Button />)
     expect(asFragment()).toMatchSnapshot()
   })
@@ -14,5 +15,21 @@ describe('button', () => {
     mockFlags({ 'dev-test-flag': false })
     const { asFragment } = render(<Button />)
     expect(asFragment()).toMatchSnapshot()
+  })
+
+  it('track', () => {
+    mockFlags({ 'dev-test-flag': true })
+    const { getByTestId } = render(<Button />)
+    fireEvent.click(getByTestId('test-button'))
+
+    expect(ldClientMock.track).toBeCalledWith('button-click')
+  })
+
+  it('identify', () => {
+    mockFlags({ 'dev-test-flag': true })
+    const { getByTestId } = render(<Button />)
+    fireEvent.click(getByTestId('test-button'))
+
+    expect(ldClientMock.identify).toBeCalledWith({ key: 'aa0ceb' })
   })
 })

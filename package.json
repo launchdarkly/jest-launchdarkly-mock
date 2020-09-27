@@ -6,6 +6,7 @@
   "files": ["dist/**/*", "README.md", "LICENSE"],
   "scripts": {
     "build": "rimraf dist && tsc",
+    "prep-dev": "yarn build && yarn --cwd example install && mkdir -p example/node_modules/jest-launchdarkly-mock && cp -r dist example/node_modules/jest-launchdarkly-mock && cp package.json example/node_modules/jest-launchdarkly-mock",
     "lint": "eslint --ext ts,tsx,js,jsx src",
     "peers": "install-peers -f",
     "test": "jest"

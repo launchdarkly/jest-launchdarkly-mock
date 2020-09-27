@@ -8,6 +8,8 @@ exports[`button flag off 1`] = `
 
 exports[`button flag on 1`] = `
 <DocumentFragment>
-  <button />
+  <button
+    data-testid="test-button"
+  />
 </DocumentFragment>
 `;
