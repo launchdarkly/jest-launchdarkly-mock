@@ -8,7 +8,7 @@ type ContactProps = {
   ldClient: LDClient
 }
 
-export const Contact: FC<ContactProps> = ({ flags, ldClient }) => {
+const Contact: FC<ContactProps> = ({ flags, ldClient }) => {
   useEffect(() => {
     ldClient.track('contact page viewed')
   }, [])
