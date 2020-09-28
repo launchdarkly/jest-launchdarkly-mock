@@ -11,16 +11,31 @@ jest.mock('launchdarkly-react-client-sdk', () => {
 import kebabCase from 'lodash.kebabcase'
 import camelCase from 'lodash.camelcase'
 import { LDFlagSet } from 'launchdarkly-js-sdk-common'
-import { useFlags, useLDClient } from 'launchdarkly-react-client-sdk'
+import { useFlags, useLDClient, withLDConsumer } from 'launchdarkly-react-client-sdk'
 
 const mockUseFlags = useFlags as jest.Mock
 const mockUseLDClient = useLDClient as jest.Mock
+const mockWithLDConsumer = withLDConsumer as jest.Mock
+
 export const ldClientMock = {
   track: jest.fn(),
   identify: jest.fn(),
+  allFlags: jest.fn(),
+  close: jest.fn(),
+  flush: jest.fn(),
+  getUser: jest.fn(),
+  off: jest.fn(),
+  on: jest.fn(),
+  setStreaming: jest.fn(),
+  variation: jest.fn(),
+  variationDetail: jest.fn(),
+  waitForInitialization: jest.fn(),
+  waitUntilGoalsReady: jest.fn(),
+  waitUntilReady: jest.fn(),
 }
 
 mockUseLDClient.mockImplementation(() => ldClientMock)
+mockWithLDConsumer.mockImplementation(() => () => null)
 
 export const mockFlags = (flags: LDFlagSet) => {
   mockUseFlags.mockImplementation(() => {
