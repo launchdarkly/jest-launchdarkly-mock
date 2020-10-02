@@ -12,7 +12,6 @@ import App from '../universal/app'
       <BrowserRouter>
         <App />
       </BrowserRouter>
-      ,
     </LDProvider>,
     document.getElementById('reactDiv'),
   )

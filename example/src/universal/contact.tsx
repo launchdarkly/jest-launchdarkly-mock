@@ -4,14 +4,14 @@ import { LDClient } from 'launchdarkly-js-client-sdk'
 import { withLDConsumer } from 'launchdarkly-react-client-sdk'
 
 type ContactProps = {
-  flags: LDFlagSet
-  ldClient: LDClient
+  flags?: LDFlagSet
+  ldClient?: LDClient
 }
 
-const Contact: FC<ContactProps> = ({ flags, ldClient }) => {
+export const Contact: FC<ContactProps> = ({ flags, ldClient }) => {
   useEffect(() => {
     ldClient.track('contact page viewed')
-  }, [])
+  }, [ldClient])
 
   return (
     <>

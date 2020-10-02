@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import { ldClientMock } from 'jest-launchdarkly-mock'
 
-import Contact from './contact'
+import { Contact } from './contact'
 
 describe('contact page', () => {
   it('flag on', () => {

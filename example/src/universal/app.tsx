@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Link, Route, Redirect } from 'react-router-dom'
+import { Switch, Link, Route } from 'react-router-dom'
 import Home from './home'
 import Contact from './contact'
 
@@ -19,11 +19,12 @@ const App = () => (
     </header>
     <main>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/home">
-          <Redirect to="/" />
+        <Route exact path={['/', '/home']}>
+          <Home />
         </Route>
-        <Route path="/contact" component={Contact} />
+        <Route path="/contact">
+          <Contact />
+        </Route>
       </Switch>
     </main>
   </div>
