@@ -7,14 +7,14 @@ import Button from './button'
 describe('button', () => {
   it('flag on', () => {
     mockFlags({ devTestFlag: true })
-    const { asFragment } = render(<Button />)
-    expect(asFragment()).toMatchSnapshot()
+    const { getByTestId } = render(<Button />)
+    expect(getByTestId('test-button')).toBeTruthy()
   })
 
   it('flag off', () => {
     mockFlags({ 'dev-test-flag': false })
-    const { asFragment } = render(<Button />)
-    expect(asFragment()).toMatchSnapshot()
+    const { getByText } = render(<Button />)
+    expect(getByText('button disabled')).toBeTruthy()
   })
 
   it('track', () => {

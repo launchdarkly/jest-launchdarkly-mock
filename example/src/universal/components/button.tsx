@@ -16,7 +16,7 @@ const Button: FunctionComponent = ({ children }) => {
       {children}
     </button>
   ) : (
-    <>Button is disabled</>
+    <>button disabled</>
   )
 }
 
