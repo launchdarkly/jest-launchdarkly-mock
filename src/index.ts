@@ -49,3 +49,16 @@ export const mockFlags = (flags: LDFlagSet) => {
     return result
   })
 }
+
+export const resetLDMocks = () => {
+  mockUseFlags.mockReset()
+
+  Object.keys(ldClientMock).forEach((k) => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    const jestMockFunction = ldClientMock[k]
+    if (typeof jestMockFunction.mock !== 'undefined') {
+      jestMockFunction.mockReset()
+    }
+  })
+}

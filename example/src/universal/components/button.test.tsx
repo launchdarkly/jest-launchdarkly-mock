@@ -1,10 +1,14 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import { mockFlags, ldClientMock } from 'jest-launchdarkly-mock'
+import { mockFlags, ldClientMock, resetLDMocks } from 'jest-launchdarkly-mock'
 
 import Button from './button'
 
 describe('button', () => {
+  beforeEach(() => {
+    resetLDMocks()
+  })
+
   it('flag on', () => {
     mockFlags({ devTestFlag: true })
     const { getByTestId } = render(<Button />)

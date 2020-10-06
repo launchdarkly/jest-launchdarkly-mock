@@ -29,22 +29,28 @@ module.exports = {
 }
 ```
 
-## API
-### mockFlags
-Call this at the start of each test to setup mock flags. This is a function
-which accepts a single parameter [`LDFlagSet`](https://launchdarkly.github.io/js-client-sdk/interfaces/_launchdarkly_js_client_sdk_.ldflagset.html).
+## Usage
+Use the only 3 apis for test cases:
 
-### ldClientMock
-This is a jest mock of the [ldClient](https://launchdarkly.github.io/js-client-sdk/interfaces/_launchdarkly_js_client_sdk_.ldclient.html). All
-methods of this object are also jest mocks. 
+* `mockFlags(flags: LDFlagSet)`: mock flags at the start of each test case.
+
+* `ldClientMock`: a jest mock of the [ldClient](https://launchdarkly.github.io/js-client-sdk/interfaces/_launchdarkly_js_client_sdk_.ldclient.html). All
+methods of this object are jest mocks.
+
+* `resetLDMocks` : resets both mockFlags and ldClientMock.
 
 ## Example
 ```tsx
 import { mockFlags, ldClientMock } from 'jest-launchdarkly-mock'
 
 describe('button', () => {
+  beforeEach(() => {
+    // reset before each test case
+    resetLDMocks()
+  })
+
   test('flag on', () => {
-      // arrange
+      // arrange: You can use kebab-case or camelCase keys
       mockFlags({ devTestFlag: true })
   
       // act
