@@ -1,7 +1,7 @@
 {
   "name": "jest-launchdarkly-mock",
-  "version": "1.0.0",
-  "description": "Easily unit test feature flagged components with jest",
+  "version": "0.1.0",
+  "description": "Easily unit test LaunchDarkly feature flagged components with jest",
   "main": "dist/index.js",
   "files": ["dist/**/*"],
   "scripts": {
