@@ -8,48 +8,62 @@
 [![Star on GitHub](https://img.shields.io/github/stars/yusinto/jest-launchdarkly-mock?style=social)](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/stargazers)
 [![Tweet](https://img.shields.io/twitter/url/https/github.com/launchdarkly-labs/jest-launchdarkly-mock.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20jest-launchdarkly-mock%20by%20%40launchdarkly%20https%3A%2F%2Fgithub.com%2Flaunchdarkly-labs%2Fjest-launchdarkly-mock%20%F0%9F%91%8D)
 
-### Installation
+## Installation
 
 ```bash
 yarn -D jest-launchdarkly-mock
+```
 
-or 
+or
 
+```bash
 npm install jest-launchdarkly-mock --save-dev
 ```
 
-In your `jest.config.js` add jest-launchdarkly-mock to setupFiles: 
+Then in `jest.config.js` add jest-launchdarkly-mock to setupFiles: 
 
 ```js
+// jest.config.js
 module.exports = {
   setupFiles: ['jest-launchdarkly-mock'],
 }
 ```
 
-### Usage
-There are 2 apis: mockFlags and ldClientMock.
+## API
+### mockFlags
+Call this at the start of each test to setup mock flags. This is a function
+which accepts a single parameter [`LDFlagSet`](https://launchdarkly.github.io/js-client-sdk/interfaces/_launchdarkly_js_client_sdk_.ldflagset.html).
 
-mockFlags is a function which takes a flag object. 
+### ldClientMock
+This is a jest mock of the [ldClient](https://launchdarkly.github.io/js-client-sdk/interfaces/_launchdarkly_js_client_sdk_.ldclient.html). All
+methods of this object are also jest mocks. 
 
-ldClientMock is a jest mock of the ldClient object. 
-
+## Example
 ```tsx
 import { mockFlags, ldClientMock } from 'jest-launchdarkly-mock'
 
 describe('button', () => {
   test('flag on', () => {
-    mockFlags({ devTestFlag: true }) // set fake flags
-    const { asFragment } = render(<Button />)
-    expect(asFragment()).toMatchSnapshot()
-  })
+      // arrange
+      mockFlags({ devTestFlag: true })
+  
+      // act
+      const { getByTestId } = render(<Button />)
 
-  test('track', () => {
+      // assert
+      expect(getByTestId('test-button')).toBeTruthy()
+    })
+
+  test('identify', () => {
+    // arrange
     mockFlags({ 'dev-test-flag': true })
+    
+    // act
     const { getByTestId } = render(<Button />)
     fireEvent.click(getByTestId('test-button'))
 
-    // assert ldClient methods
-    expect(ldClientMock.track).toBeCalledWith('button-click')
+    // assert: identify gets called
+    expect(ldClientMock.identify).toBeCalledWith({ key: 'aa0ceb' })
   })
 })
 
