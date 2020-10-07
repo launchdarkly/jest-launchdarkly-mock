@@ -46,5 +46,5 @@ by doing the following:
 
 2. Running unit tests in the example app:
     ```
-    cd example && yarn && yarn test
+    cd example && yarn test
     ```
