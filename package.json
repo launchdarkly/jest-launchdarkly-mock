@@ -1,9 +1,11 @@
 {
   "name": "jest-launchdarkly-mock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Easily unit test LaunchDarkly feature flagged components with jest",
   "main": "dist/index.js",
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "rimraf dist && tsc",
     "prep-dev": "yarn build && yarn --cwd example install && mkdir -p example/node_modules/jest-launchdarkly-mock && cp -r dist example/node_modules/jest-launchdarkly-mock && cp package.json example/node_modules/jest-launchdarkly-mock",
@@ -15,7 +17,15 @@
     "type": "git",
     "url": "git+https://github.com/launchdarkly-labs/jest-launchdarkly-mock.git"
   },
-  "keywords": ["jest", "launchdarkly", "mock", "unit", "test", "feature", "flags"],
+  "keywords": [
+    "jest",
+    "launchdarkly",
+    "mock",
+    "unit",
+    "test",
+    "feature",
+    "flags"
+  ],
   "author": "Yusinto Ngadiman",
   "license": "Apache-2.0",
   "homepage": "https://github.com/launchdarkly-labs/jest-launchdarkly-mock#readme",
