@@ -7814,10 +7814,10 @@ jest-jasmine2@^26.4.2:
     pretty-format "^26.4.2"
     throat "^5.0.0"
 
-jest-launchdarkly-mock@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/jest-launchdarkly-mock/-/jest-launchdarkly-mock-0.1.0.tgz#933b80bab08cec6b71bde5b4236843bc6e1e8384"
-  integrity sha512-NwdSmYGOaXQGwQqXFz80wvDQ2MGCog5FbpxHrg5viHUG9JWsM0pSZzRtblQMdFw/u6LmeO3w5bFb6wsp4TUeug==
+jest-launchdarkly-mock@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/jest-launchdarkly-mock/-/jest-launchdarkly-mock-0.1.1.tgz#67443fda7e661b6b9f6493e11ebbf4d18be39bcd"
+  integrity sha512-Von9Pk0JYw2ek0Q3/Shb4OFdRp3/UhBO6ssS4uG+R2iL1+vRwl+6k5g+OOn9CdqfHlDwdtrux5MWOTPPoXoTCw==
   dependencies:
     lodash.camelcase "^4.3.0"
     lodash.kebabcase "^4.1.1"
