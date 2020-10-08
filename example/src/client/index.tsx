@@ -5,7 +5,7 @@ import { asyncWithLDProvider } from 'launchdarkly-react-client-sdk'
 import App from '../universal/app'
 ;(async () => {
   const LDProvider = await asyncWithLDProvider({
-    clientSideID: '59b2b2596d1a250b1c78baa4',
+    clientSideID: 'YOUR_CLIENT_SIDE_ID',
   })
   render(
     <LDProvider>
