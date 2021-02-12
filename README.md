@@ -41,7 +41,7 @@ methods of this object are jest mocks.
 
 ## Example
 ```tsx
-import { mockFlags, ldClientMock } from 'jest-launchdarkly-mock'
+import { mockFlags, ldClientMock, resetLDMocks } from 'jest-launchdarkly-mock'
 
 describe('button', () => {
   beforeEach(() => {
