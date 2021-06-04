@@ -18,6 +18,7 @@ const mockUseLDClient = useLDClient as jest.Mock
 const mockWithLDConsumer = withLDConsumer as jest.Mock
 
 export const ldClientMock = {
+  alias: jest.fn(),
   track: jest.fn(),
   identify: jest.fn(),
   allFlags: jest.fn(),
