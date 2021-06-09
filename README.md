@@ -36,7 +36,7 @@ Use the only 3 apis for test cases:
 ###### Options
 | name | type | default | description |
 | ---- | ---- | ------- | ----------- |
-| skipFormatting(optional) | boolean | false | If true, flags will not be formatting to camelCase or kebab-case |
+| skipFormatting(optional) | boolean | false | If true, flags will not be formatted to camelCase or kebab-case |
 
 * `ldClientMock`: a jest mock of the [ldClient](https://launchdarkly.github.io/js-client-sdk/interfaces/_launchdarkly_js_client_sdk_.ldclient.html). All
 methods of this object are jest mocks.
