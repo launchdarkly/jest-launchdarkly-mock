@@ -25,6 +25,17 @@ describe('main', () => {
     expect(current['dev-test-flag']).toBeTruthy()
   })
 
+  test('mock "skipFormatting: true" option correctly', () => {
+    mockFlags({ DEV_test_Flag: true }, { skipFormatting: true })
+
+    const {
+      result: { current },
+    } = renderHook(() => useFlags())
+
+    expect(current.DEV_test_Flag).toBeTruthy()
+    expect(current['DEV_test_Flag']).toBeTruthy()
+  })
+
   test('mock ldClient correctly', () => {
     const {
       result: { current },
