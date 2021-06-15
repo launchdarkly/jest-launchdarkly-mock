@@ -11,7 +11,7 @@
 ## Installation
 
 ```bash
-yarn -D jest-launchdarkly-mock
+yarn add -D jest-launchdarkly-mock
 ```
 
 or
