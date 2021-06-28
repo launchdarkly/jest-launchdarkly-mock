@@ -5,7 +5,7 @@ All notable changes to the jest-launchdarkly-mock package will be documented in 
 [Semantic Versioning](https://semver.org).
 
 
-## [v0.2.0](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/releases/tag/v0.2.0)  28-Jun-2021
+## [v0.2.1](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/releases/tag/v0.2.1)  28-Jun-2021
 - Added support to mock `withLDProvider`
 
 ## [v0.1.1](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/releases/tag/v0.1.1)  8-Oct-2020
