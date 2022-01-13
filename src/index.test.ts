@@ -25,8 +25,8 @@ describe('main', () => {
     expect(current['dev-test-flag']).toBeTruthy()
   })
 
-  test('mock "skipFormatting: true" option correctly', () => {
-    mockFlags({ DEV_test_Flag: true }, { skipFormatting: true })
+  test('mock option without case formatting correctly', () => {
+    mockFlags({ DEV_test_Flag: true })
 
     const {
       result: { current },
