@@ -1,7 +1,9 @@
 jest.mock('launchdarkly-react-client-sdk', () => {
   const { camelCaseKeys } = jest.requireActual('launchdarkly-react-client-sdk')
   return {
+    asyncWithLDProvider: jest.fn(),
     camelCaseKeys,
+    LDProvider: jest.fn(),
     useLDClient: jest.fn(),
     useFlags: jest.fn(),
     withLDConsumer: jest.fn(),
@@ -12,8 +14,17 @@ jest.mock('launchdarkly-react-client-sdk', () => {
 import kebabCase from 'lodash.kebabcase'
 import camelCase from 'lodash.camelcase'
 import { LDFlagSet } from 'launchdarkly-js-sdk-common'
-import { useFlags, useLDClient, withLDConsumer, withLDProvider } from 'launchdarkly-react-client-sdk'
+import {
+  asyncWithLDProvider,
+  LDProvider,
+  useFlags,
+  useLDClient,
+  withLDConsumer,
+  withLDProvider,
+} from 'launchdarkly-react-client-sdk'
 
+const mockAsyncWithLDProvider = asyncWithLDProvider as jest.Mock
+const mockLDProvider = LDProvider as jest.Mock
 const mockUseFlags = useFlags as jest.Mock
 const mockUseLDClient = useLDClient as jest.Mock
 const mockWithLDConsumer = withLDConsumer as jest.Mock
@@ -36,6 +47,8 @@ export const ldClientMock = {
   waitUntilReady: jest.fn(),
 }
 
+mockAsyncWithLDProvider.mockImplementation(() => (children: any) => children)
+mockLDProvider.mockImplementation((children: any) => children)
 mockUseLDClient.mockImplementation(() => ldClientMock)
 mockWithLDConsumer.mockImplementation(() => () => null)
 mockWithLDProvider.mockImplementation(() => (children: any) => children)
