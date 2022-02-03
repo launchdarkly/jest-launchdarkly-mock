@@ -61,6 +61,7 @@ export const mockFlags = (flags: LDFlagSet) => {
       const camel = camelCase(k)
       result[kebab] = flags[k]
       result[camel] = flags[k]
+      result[k] = flags[k]
     })
     return result
   })

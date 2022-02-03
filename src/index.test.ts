@@ -25,6 +25,17 @@ describe('main', () => {
     expect(current['dev-test-flag']).toBeTruthy()
   })
 
+  test('mock option without case formatting correctly', () => {
+    mockFlags({ DEV_test_Flag: true })
+
+    const {
+      result: { current },
+    } = renderHook(() => useFlags())
+
+    expect(current.DEV_test_Flag).toBeTruthy()
+    expect(current['DEV_test_Flag']).toBeTruthy()
+  })
+
   test('mock asyncWithLDProvider correctly', () => {
     expect(asyncWithLDProvider).toBeDefined()
   })
