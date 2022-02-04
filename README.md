@@ -50,7 +50,8 @@ describe('button', () => {
   })
 
   test('flag on', () => {
-      // arrange: You can use kebab-case or camelCase keys
+      // arrange
+      // You can use the original unchanged case, kebab-case, camelCase or snake_case keys.
       mockFlags({ devTestFlag: true })
   
       // act
