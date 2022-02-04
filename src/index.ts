@@ -13,6 +13,7 @@ jest.mock('launchdarkly-react-client-sdk', () => {
 
 import kebabCase from 'lodash.kebabcase'
 import camelCase from 'lodash.camelcase'
+import snakeCase from 'lodash.snakecase'
 import { LDFlagSet } from 'launchdarkly-js-sdk-common'
 import {
   asyncWithLDProvider,
@@ -31,6 +32,7 @@ const mockWithLDConsumer = withLDConsumer as jest.Mock
 const mockWithLDProvider = withLDProvider as jest.Mock
 
 export const ldClientMock = {
+  alias: jest.fn(),
   track: jest.fn(),
   identify: jest.fn(),
   allFlags: jest.fn(),
@@ -59,8 +61,10 @@ export const mockFlags = (flags: LDFlagSet) => {
     Object.keys(flags).forEach((k) => {
       const kebab = kebabCase(k)
       const camel = camelCase(k)
+      const snake = snakeCase(k)
       result[kebab] = flags[k]
       result[camel] = flags[k]
+      result[snake] = flags[k]
       result[k] = flags[k]
     })
     return result

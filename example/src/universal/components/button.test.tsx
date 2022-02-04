@@ -9,14 +9,30 @@ describe('button', () => {
     resetLDMocks()
   })
 
-  it('flag on', () => {
+  // mocking camelCased flags
+  it('camelCased flag on', () => {
     mockFlags({ devTestFlag: true })
     const { getByTestId } = render(<Button />)
     expect(getByTestId('test-button')).toBeTruthy()
   })
 
-  it('flag off', () => {
+  // mocking kebab-cased flags
+  it('kebab-cased flag off', () => {
     mockFlags({ 'dev-test-flag': false })
+    const { getByText } = render(<Button />)
+    expect(getByText('button disabled')).toBeTruthy()
+  })
+
+  // mocking snake_cased flags
+  it('snake_cased flag off', () => {
+    mockFlags({ 'dev_test_flag': false })
+    const { getByText } = render(<Button />)
+    expect(getByText('button disabled')).toBeTruthy()
+  })
+
+  // mocking snake_cased flags
+  it('snake_cased flag off', () => {
+    mockFlags({ 'dev_test_flag': false })
     const { getByText } = render(<Button />)
     expect(getByText('button disabled')).toBeTruthy()
   })

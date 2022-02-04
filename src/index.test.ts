@@ -55,6 +55,7 @@ describe('main', () => {
   })
 
   test('ldClient mock has complete set of methods', () => {
+    expect(ldClientMock.alias.mock).toBeDefined()
     expect(ldClientMock.track.mock).toBeDefined()
     expect(ldClientMock.identify.mock).toBeDefined()
     expect(ldClientMock.allFlags.mock).toBeDefined()
