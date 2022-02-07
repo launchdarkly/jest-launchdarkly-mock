@@ -1,0 +1,9 @@
+repo:
+  public: jest-launchdarkly-mock
+
+publications:
+  - url: https://www.npmjs.com/package/jest-launchdarkly-mock
+    description: npm
+
+template:
+  name: npm
