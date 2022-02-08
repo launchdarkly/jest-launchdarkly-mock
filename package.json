@@ -35,7 +35,7 @@
     "lodash.snakecase": "^4.1.1"
   },
   "devDependencies": {
-    "@testing-library/react-hooks": "3.4.2",
+    "@testing-library/react-hooks": "7.0.2",
     "@types/jest": "26.0.14",
     "@types/lodash.camelcase": "^4.3.6",
     "@types/lodash.kebabcase": "^4.1.6",
