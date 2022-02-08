@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/lodash.camelcase", "npm:4.3.6"],
             ["@types/lodash.kebabcase", "npm:4.1.6"],
             ["@types/lodash.snakecase", "npm:4.1.6"],
+            ["@types/node", "npm:17.0.16"],
             ["@types/react", "npm:16.9.51"],
             ["@types/react-dom", "npm:16.9.8"],
             ["@typescript-eslint/eslint-plugin", "virtual:4919200c2f967ac19daea58f88285c2db00ba0b5b16640ec44808ac4c1c6f3ba6097a44528de19f2dbd7afeabe0b572fd1d685eb4ca5617a405b93b29ae6fe84#npm:4.4.0"],
@@ -1149,6 +1150,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-14.11.7-e8042571fb-23b8e12764.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:14.11.7"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:17.0.16", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-17.0.16-573ed3f9a8-2d452a9e0e.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:17.0.16"]
           ],
           "linkType": "HARD",
         }]
@@ -4677,6 +4685,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/lodash.camelcase", "npm:4.3.6"],
             ["@types/lodash.kebabcase", "npm:4.1.6"],
             ["@types/lodash.snakecase", "npm:4.1.6"],
+            ["@types/node", "npm:17.0.16"],
             ["@types/react", "npm:16.9.51"],
             ["@types/react-dom", "npm:16.9.8"],
             ["@typescript-eslint/eslint-plugin", "virtual:4919200c2f967ac19daea58f88285c2db00ba0b5b16640ec44808ac4c1c6f3ba6097a44528de19f2dbd7afeabe0b572fd1d685eb4ca5617a405b93b29ae6fe84#npm:4.4.0"],
