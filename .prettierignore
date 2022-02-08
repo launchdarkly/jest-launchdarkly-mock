@@ -1,0 +1,9 @@
+.cache
+.fig
+.yarn
+package.json
+package-lock.json
+public
+dist
+
+src/content/topics/components.mdx
