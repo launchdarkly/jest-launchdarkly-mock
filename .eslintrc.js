@@ -32,6 +32,7 @@ module.exports = {
     sourceType: 'module', // Allows for the use of imports
   },
   rules: {
+    '@typescript-eslint/no-non-null-assertion': 'off',
     'no-duplicate-imports': 'error',
 
     // Forbid unnecessary backticks

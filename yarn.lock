@@ -3912,7 +3912,7 @@ __metadata:
     eslint-plugin-react: ^7.20.6
     eslint-plugin-react-hooks: ^4.1.2
     jest: ^26.4.2
-    launchdarkly-js-sdk-common: ^3.2.10
+    launchdarkly-js-sdk-common: ^4.0.2
     launchdarkly-react-client-sdk: ^2.20.2
     lodash.camelcase: ^4.3.0
     lodash.kebabcase: ^4.1.1
@@ -4387,7 +4387,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"launchdarkly-js-sdk-common@npm:3.2.10, launchdarkly-js-sdk-common@npm:^3.2.10":
+"launchdarkly-js-sdk-common@npm:3.2.10":
   version: 3.2.10
   resolution: "launchdarkly-js-sdk-common@npm:3.2.10"
   dependencies:
@@ -4395,6 +4395,17 @@ __metadata:
     fast-deep-equal: ^2.0.1
     uuid: ^3.3.2
   checksum: 2868c84821f5220aa97863d8c80fc63b30d75b35758d27915f50ea53fb024aeb13ddf451e90ec9efa142328dd239f9273610f439d147e76e37d6e9c104e05d06
+  languageName: node
+  linkType: hard
+
+"launchdarkly-js-sdk-common@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "launchdarkly-js-sdk-common@npm:4.0.2"
+  dependencies:
+    base64-js: ^1.3.0
+    fast-deep-equal: ^2.0.1
+    uuid: ^8.0.0
+  checksum: 3449157c53a33a8de8d9be84c6ada4056dda336797df540953c9b8f6f1ae88e4225e641c3c481eaeca94d8fc48137a5b0dcd5768151a0e9006f1bd35541520ed
   languageName: node
   linkType: hard
 
@@ -6813,6 +6824,15 @@ __metadata:
   bin:
     uuid: ./bin/uuid
   checksum: 58de2feed61c59060b40f8203c0e4ed7fd6f99d42534a499f1741218a1dd0c129f4aa1de797bcf822c8ea5da7e4137aa3673431a96dae729047f7aca7b27866f
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^8.0.0":
+  version: 8.3.2
+  resolution: "uuid@npm:8.3.2"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
   languageName: node
   linkType: hard
 

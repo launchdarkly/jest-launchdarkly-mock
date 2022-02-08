@@ -53,7 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:4919200c2f967ac19daea58f88285c2db00ba0b5b16640ec44808ac4c1c6f3ba6097a44528de19f2dbd7afeabe0b572fd1d685eb4ca5617a405b93b29ae6fe84#npm:7.21.3"],
             ["eslint-plugin-react-hooks", "virtual:4919200c2f967ac19daea58f88285c2db00ba0b5b16640ec44808ac4c1c6f3ba6097a44528de19f2dbd7afeabe0b572fd1d685eb4ca5617a405b93b29ae6fe84#npm:4.1.2"],
             ["jest", "npm:26.5.2"],
-            ["launchdarkly-js-sdk-common", "npm:3.2.10"],
+            ["launchdarkly-js-sdk-common", "npm:4.0.2"],
             ["launchdarkly-react-client-sdk", "virtual:4919200c2f967ac19daea58f88285c2db00ba0b5b16640ec44808ac4c1c6f3ba6097a44528de19f2dbd7afeabe0b572fd1d685eb4ca5617a405b93b29ae6fe84#npm:2.20.2"],
             ["lodash.camelcase", "npm:4.3.0"],
             ["lodash.kebabcase", "npm:4.1.1"],
@@ -4739,7 +4739,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:4919200c2f967ac19daea58f88285c2db00ba0b5b16640ec44808ac4c1c6f3ba6097a44528de19f2dbd7afeabe0b572fd1d685eb4ca5617a405b93b29ae6fe84#npm:7.21.3"],
             ["eslint-plugin-react-hooks", "virtual:4919200c2f967ac19daea58f88285c2db00ba0b5b16640ec44808ac4c1c6f3ba6097a44528de19f2dbd7afeabe0b572fd1d685eb4ca5617a405b93b29ae6fe84#npm:4.1.2"],
             ["jest", "npm:26.5.2"],
-            ["launchdarkly-js-sdk-common", "npm:3.2.10"],
+            ["launchdarkly-js-sdk-common", "npm:4.0.2"],
             ["launchdarkly-react-client-sdk", "virtual:4919200c2f967ac19daea58f88285c2db00ba0b5b16640ec44808ac4c1c6f3ba6097a44528de19f2dbd7afeabe0b572fd1d685eb4ca5617a405b93b29ae6fe84#npm:2.20.2"],
             ["lodash.camelcase", "npm:4.3.0"],
             ["lodash.kebabcase", "npm:4.1.1"],
@@ -5257,6 +5257,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["base64-js", "npm:1.3.1"],
             ["fast-deep-equal", "npm:2.0.1"],
             ["uuid", "npm:3.4.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.0.2", {
+          "packageLocation": "./.yarn/cache/launchdarkly-js-sdk-common-npm-4.0.2-f03354a311-3449157c53.zip/node_modules/launchdarkly-js-sdk-common/",
+          "packageDependencies": [
+            ["launchdarkly-js-sdk-common", "npm:4.0.2"],
+            ["base64-js", "npm:1.3.1"],
+            ["fast-deep-equal", "npm:2.0.1"],
+            ["uuid", "npm:8.3.2"]
           ],
           "linkType": "HARD",
         }]
@@ -7989,6 +7999,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/uuid-npm-8.3.1-8a5b02e900-e60e1d571d.zip/node_modules/uuid/",
           "packageDependencies": [
             ["uuid", "npm:8.3.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:8.3.2", {
+          "packageLocation": "./.yarn/cache/uuid-npm-8.3.2-eca0baba53-5575a8a75c.zip/node_modules/uuid/",
+          "packageDependencies": [
+            ["uuid", "npm:8.3.2"]
           ],
           "linkType": "HARD",
         }]
