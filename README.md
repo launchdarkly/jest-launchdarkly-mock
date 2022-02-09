@@ -8,6 +8,10 @@
 [![Star on GitHub](https://img.shields.io/github/stars/launchdarkly/jest-launchdarkly-mock?style=social)](https://github.com/launchdarkly/jest-launchdarkly-mock/stargazers)
 [![Tweet](https://img.shields.io/twitter/url/https/github.com/launchdarkly/jest-launchdarkly-mock.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20jest-launchdarkly-mock%20by%20%40launchdarkly%20https%3A%2F%2Fgithub.com%2Flaunchdarkly%2Fjest-launchdarkly-mock%20%F0%9F%91%8D)
 
+> **Easily unit test LaunchDarkly feature flagged components with jest** :clap:
+
+This package is only compatible with the react sdk.
+
 ## Installation
 
 ```bash
