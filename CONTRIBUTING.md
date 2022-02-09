@@ -6,12 +6,12 @@ this mock library.
  
 ## Bugs and feature requests
   
-The LaunchDarkly SDK team monitors the [issue tracker](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/issues) 
+The LaunchDarkly SDK team monitors the [issue tracker](https://github.com/launchdarkly/jest-launchdarkly-mock/issues) 
 in this repository. Bug reports and feature requests should be filed in this issue tracker.
  
 ## Pull requests
  
-We encourage [pull requests](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/pulls) and other contributions 
+We encourage [pull requests](https://github.com/launchdarkly/jest-launchdarkly-mock/pulls) and other contributions 
 from the community. Before submitting pull requests, ensure that all temporary or unintended code is removed. 
 Don't worry about adding reviewers to the pull request; the LaunchDarkly SDK team will add themselves.
  
@@ -25,7 +25,7 @@ yarn
 ```
   
 ### Testing
-You can run unit tests or use the mock package in the [example app](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/tree/master/example)
+You can run unit tests or use the mock package in the [example app](https://github.com/launchdarkly/jest-launchdarkly-mock/tree/master/example)
 included in this package.
 
 #### Unit tests
@@ -35,7 +35,7 @@ yarn test
 ``` 
 
 #### Test in example app
-You can run the mocks in the [example app](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/tree/master/example)
+You can run the mocks in the [example app](https://github.com/launchdarkly/jest-launchdarkly-mock/tree/master/example)
 by doing the following:
 
 1. Build the mock package and copy output to the example app:
