@@ -49,7 +49,7 @@ export const ldClientMock = {
   waitUntilReady: jest.fn(),
 }
 
-mockAsyncWithLDProvider.mockImplementation(() => (children: any) => children)
+mockAsyncWithLDProvider.mockImplementation(() => Promise.resolve((props: any) => props.children))
 mockLDProvider.mockImplementation((children: any) => children)
 mockUseLDClient.mockImplementation(() => ldClientMock)
 mockWithLDConsumer.mockImplementation(() => () => null)

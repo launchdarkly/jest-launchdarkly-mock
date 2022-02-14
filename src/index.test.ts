@@ -40,6 +40,20 @@ describe('main', () => {
     expect(asyncWithLDProvider).toBeDefined()
   })
 
+  test('mock asyncWithLDProvider returns promise of a value function', (done) => {
+    const providerPromise = asyncWithLDProvider({ clientSideID: 'someid' });
+
+    expect(providerPromise).toBeInstanceOf(Promise)
+
+    providerPromise.then(provider => {
+      expect(provider).toBeInstanceOf(Function)
+
+      expect(provider({ children: 'child' })).toEqual('child')
+
+      done()
+    })
+  })
+
   test('mock LDProvider correctly', () => {
     expect(LDProvider).toBeDefined()
   })
