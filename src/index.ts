@@ -67,6 +67,7 @@ export const mockFlags = (flags: LDFlagSet) => {
       result[snake] = flags[k]
       result[k] = flags[k]
     })
+
     return result
   })
 }

@@ -12,10 +12,10 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "target": "es5",
-    "types": ["jest", "jest", "node"],
+    "types": ["jest", "jest"],
     "lib": ["es2017", "dom"],
     "strict": true,
     "declaration": true
   },
-  "exclude": ["example", "**/dist", "node_modules", "**/node_modules", "**/*.spec.ts", "**/__tests__", "**/*.test.ts"]
+  "exclude": ["example*", "**/dist", "node_modules", "**/node_modules", "**/*.spec.ts", "**/__tests__", "**/*.test.ts"]
 }
