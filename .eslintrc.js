@@ -1,11 +1,6 @@
 module.exports = {
-  parser: '@typescript-eslint/parser', // Specifies the ESLint parser
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-  ],
+  parser: '@typescript-eslint/parser',
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'prettier'],
   settings: {
     react: {
       version: 'detect',
@@ -27,7 +22,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    ecmaVersion: 'latest', // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
   },
   rules: {
@@ -45,7 +40,7 @@ module.exports = {
     'react/display-name': 'off',
 
     'import/no-unresolved': 'error',
-    'import/named': 'error',
+    'import/named': 'off',
     'import/default': 'error',
     'import/export': 'error',
     'import/no-self-import': 'error',

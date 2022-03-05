@@ -14,7 +14,7 @@ jest.mock('launchdarkly-react-client-sdk', () => {
 import kebabCase from 'lodash.kebabcase'
 import camelCase from 'lodash.camelcase'
 import snakeCase from 'lodash.snakecase'
-import { LDFlagSet } from 'launchdarkly-js-sdk-common'
+import { LDFlagSet } from 'launchdarkly-js-client-sdk'
 import {
   asyncWithLDProvider,
   LDProvider,

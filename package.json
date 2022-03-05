@@ -52,7 +52,7 @@
     "eslint-plugin-react": "^7.29.3",
     "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^27.5.1",
-    "launchdarkly-js-sdk-common": "^4.0.3",
+    "launchdarkly-js-client-sdk": "^2.20.2",
     "launchdarkly-react-client-sdk": "^2.25.1",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
