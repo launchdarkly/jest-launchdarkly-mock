@@ -41,11 +41,11 @@ describe('main', () => {
   })
 
   test('mock asyncWithLDProvider returns promise of a value function', (done) => {
-    const providerPromise = asyncWithLDProvider({ clientSideID: 'someid' });
+    const providerPromise = asyncWithLDProvider({ clientSideID: 'someid' })
 
     expect(providerPromise).toBeInstanceOf(Promise)
 
-    providerPromise.then(provider => {
+    providerPromise.then((provider) => {
       expect(provider).toBeInstanceOf(Function)
 
       expect(provider({ children: 'child' })).toEqual('child')
