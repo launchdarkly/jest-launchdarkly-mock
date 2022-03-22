@@ -7,7 +7,7 @@ publications:
 
 jobs:
   - docker:
-      image: node:16
+      image: node:buster
     template:
       name: npm
       skip:
