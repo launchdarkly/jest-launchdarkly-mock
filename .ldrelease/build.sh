@@ -2,6 +2,7 @@
 
 set -ue
 
-which yarn
+node --version
+npm -v
 
 yarn && yarn check
