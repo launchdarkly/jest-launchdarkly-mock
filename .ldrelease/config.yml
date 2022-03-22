@@ -7,4 +7,4 @@ publications:
 
 jobs:
   - docker:
-      image: cimg/node:16.14.2
+      image: cimg/go:1.17.1
