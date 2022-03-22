@@ -2,8 +2,7 @@
 
 set -ue
 
-corepack enable
-
+npm i -g corepack
 node --version
 npm -v
 
