@@ -2,7 +2,7 @@
 
 set -ue
 
-npm i -g corepack
+sudo npm i -g corepack
 node --version
 npm -v
 
