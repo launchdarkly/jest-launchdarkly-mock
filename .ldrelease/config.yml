@@ -1,3 +1,5 @@
+version: 2
+
 repo:
   public: jest-launchdarkly-mock
 
