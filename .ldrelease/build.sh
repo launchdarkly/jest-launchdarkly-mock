@@ -2,4 +2,6 @@
 
 set -ue
 
+which yarn
+
 yarn && yarn check
