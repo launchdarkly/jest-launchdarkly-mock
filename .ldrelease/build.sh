@@ -1,9 +1,10 @@
 #!/bin/bash
 
-set -ue
+set -ev
 
-sudo npm i -g corepack
 node --version
 npm -v
+sudo npm i -g corepack
+
 
 yarn && yarn check
