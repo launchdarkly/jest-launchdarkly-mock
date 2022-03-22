@@ -5,5 +5,10 @@ publications:
   - url: https://www.npmjs.com/package/jest-launchdarkly-mock
     description: npm
 
-template:
-  name: npm
+jobs:
+  - docker:
+      image: node:16
+    template:
+      name: npm
+      skip:
+        - test # build.sh does everything so this is unnecessary
