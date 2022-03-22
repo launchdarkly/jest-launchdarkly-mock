@@ -3,14 +3,13 @@ version: 2
 repo:
   public: jest-launchdarkly-mock
 
-publications:
-  - url: https://www.npmjs.com/package/jest-launchdarkly-mock
-    description: npm
-
 jobs:
   - docker:
-      image: cimg/node:16.14.2
+      image: cimg/go:1.17.1
+      copyGitHistory: true
     template:
-      name: npm
-      skip:
-        - test # build.sh does everything so this is unnecessary
+      name: go
+
+publications:
+  - url: https://pkg.go.dev/github.com/launchdarkly/ld-find-code-refs
+    description: documentation
