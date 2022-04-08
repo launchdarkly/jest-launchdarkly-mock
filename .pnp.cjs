@@ -131,7 +131,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:8f059218df46789308c44b56edd5e7b888fff7badfec0902230a5baf732ef6a46e1babff31bbb01ade8dfd134511cf8dfb4665bdbbf4e2b65119d638df0e1c0e#npm:4.2.0"],\
             ["gensync", "npm:1.0.0-beta.1"],\
             ["json5", "npm:2.1.3"],\
-            ["lodash", "npm:4.17.20"],\
+            ["lodash", "npm:4.17.21"],\
             ["resolve", "patch:resolve@npm%3A1.17.0#~builtin<compat/resolve>::version=1.17.0&hash=07638b"],\
             ["semver", "npm:5.7.1"],\
             ["source-map", "npm:0.5.7"]\
@@ -552,7 +552,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-split-export-declaration", "npm:7.11.0"],\
             ["@babel/template", "npm:7.10.4"],\
             ["@babel/types", "npm:7.11.5"],\
-            ["lodash", "npm:4.17.20"]\
+            ["lodash", "npm:4.17.21"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -4383,7 +4383,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/types", "npm:7.11.5"],\
             ["debug", "virtual:8f059218df46789308c44b56edd5e7b888fff7badfec0902230a5baf732ef6a46e1babff31bbb01ade8dfd134511cf8dfb4665bdbbf4e2b65119d638df0e1c0e#npm:4.2.0"],\
             ["globals", "npm:11.12.0"],\
-            ["lodash", "npm:4.17.20"]\
+            ["lodash", "npm:4.17.21"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -4428,7 +4428,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/types", "npm:7.11.5"],\
             ["@babel/helper-validator-identifier", "npm:7.10.4"],\
-            ["lodash", "npm:4.17.20"],\
+            ["lodash", "npm:4.17.21"],\
             ["to-fast-properties", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
@@ -10343,13 +10343,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["lodash", [\
-        ["npm:4.17.20", {\
-          "packageLocation": "./.yarn/cache/lodash-npm-4.17.20-c0db62021c-b31afa0973.zip/node_modules/lodash/",\
-          "packageDependencies": [\
-            ["lodash", "npm:4.17.20"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:4.17.21", {\
           "packageLocation": "./.yarn/cache/lodash-npm-4.17.21-6382451519-eb835a2e51.zip/node_modules/lodash/",\
           "packageDependencies": [\
