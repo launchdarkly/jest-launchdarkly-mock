@@ -69,5 +69,8 @@
     "universal-hot-reload@3.3.9": {
       "unplugged": true
     }
+  },
+  "resolutions": {
+    "lodash": "^4.17.21"
   }
 }
