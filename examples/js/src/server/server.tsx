@@ -14,7 +14,7 @@ app.use((req, res) => {
                         <title>Universal Hot Reload</title>
                       </head>
                       <body>
-                        <div id="reactDiv" />
+                        <div id="rootDiv" />
                         <script type="application/javascript" src="/dist/bundle.js"></script>
                       </body>
                     </html>`

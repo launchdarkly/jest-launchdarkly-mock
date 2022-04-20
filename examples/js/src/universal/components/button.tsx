@@ -1,17 +1,18 @@
-import React, { FunctionComponent } from 'react'
+import React, { FC, ReactNode } from 'react'
 import { LDClient } from 'launchdarkly-js-client-sdk'
-import { useFlags, useLDClient } from 'launchdarkly-react-client-sdk'
 
-const Button: FunctionComponent = ({ children }) => {
-  const { devTestFlag } = useFlags()
-  const ldClient = useLDClient() as LDClient
+type ButtonProps = {
+  children: ReactNode
+  ldClient: LDClient
+}
 
+const Button: FC<ButtonProps> = ({ children, ldClient }) => {
   const onClick = () => {
     ldClient.track('button-click')
     ldClient.identify({ key: 'aa0ceb' })
   }
 
-  return devTestFlag ? (
+  return ldClient.variation('dev-test-flag') ? (
     <button data-testid="test-button" onClick={onClick}>
       {children}
     </button>

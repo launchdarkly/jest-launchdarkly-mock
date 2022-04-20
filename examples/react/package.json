@@ -12,7 +12,15 @@
     "webpack": "webpack -c webpack.config.client.js",
     "start": "yarn webpack && yarn server"
   },
-  "keywords": ["storybook", "launchdarkly", "react", "typescript", "feature", "flags", "ux"],
+  "keywords": [
+    "storybook",
+    "launchdarkly",
+    "react",
+    "typescript",
+    "feature",
+    "flags",
+    "ux"
+  ],
   "author": "Yusinto Ngadiman",
   "license": "ISC",
   "dependencies": {

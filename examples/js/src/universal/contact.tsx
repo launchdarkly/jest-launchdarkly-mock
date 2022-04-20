@@ -1,20 +1,18 @@
 import React, { FunctionComponent as FC, useEffect } from 'react'
-import { LDClient, LDFlagSet } from 'launchdarkly-js-client-sdk'
-import { withLDConsumer } from 'launchdarkly-react-client-sdk'
+import { LDClient } from 'launchdarkly-js-client-sdk'
 
 type ContactProps = {
-  flags?: LDFlagSet
-  ldClient?: LDClient
+  ldClient: LDClient
 }
 
-export const Contact: FC<ContactProps> = ({ flags = {}, ldClient }) => {
+export const Contact: FC<ContactProps> = ({ ldClient }) => {
   useEffect(() => {
     ldClient && ldClient.track('contact page viewed')
   }, [ldClient])
 
   return (
     <>
-      {flags.devTestFlag ? <div>Flag on</div> : <div>Flag off</div>}
+      {ldClient.variation('dev-test-flag') ? <div>Flag on</div> : <div>Flag off</div>}
       <h1>This is the contact page</h1>
       <p>
         Check out my blog at{' '}
@@ -26,4 +24,4 @@ export const Contact: FC<ContactProps> = ({ flags = {}, ldClient }) => {
   )
 }
 
-export default withLDConsumer()(Contact)
+export default Contact

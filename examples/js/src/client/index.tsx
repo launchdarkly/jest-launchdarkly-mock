@@ -1,18 +1,25 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import { asyncWithLDProvider } from 'launchdarkly-react-client-sdk'
+import { initialize } from 'launchdarkly-js-client-sdk'
 import App from '../universal/app'
+
+const ldClient = initialize('your_client_side_id', {
+  key: 'test-user',
+})
+
+// iife
 ;(async () => {
-  const LDProvider = await asyncWithLDProvider({
-    clientSideID: 'your-client-side-id',
-  })
-  render(
-    <LDProvider>
+  try {
+    await ldClient.waitForInitialization()
+
+    render(
       <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </LDProvider>,
-    document.getElementById('reactDiv'),
-  )
+        <App ldClient={ldClient} />
+      </BrowserRouter>,
+      document.getElementById('rootDiv'),
+    )
+  } catch (err) {
+    console.error(`ldClient failed to initialize: ${JSON.stringify(err)}`)
+  }
 })()

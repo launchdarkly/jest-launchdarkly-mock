@@ -1,9 +1,10 @@
 import React from 'react'
-import { Switch, Link, Route } from 'react-router-dom'
+import { Routes, Link, Route } from 'react-router-dom'
+import { LDClient } from 'launchdarkly-js-client-sdk'
 import Home from './home'
 import Contact from './contact'
 
-const App = () => (
+const App = ({ ldClient }: { ldClient: LDClient }) => (
   <div>
     <header>
       <nav>
@@ -18,14 +19,15 @@ const App = () => (
       </nav>
     </header>
     <main>
-      <Switch>
-        <Route exact path={['/', '/home']}>
-          <Home />
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home ldClient={ldClient} />} />
+          <Route path="home" element={<Home ldClient={ldClient} />} />
         </Route>
         <Route path="/contact">
-          <Contact />
+          <Contact ldClient={ldClient} />
         </Route>
-      </Switch>
+      </Routes>
     </main>
   </div>
 )

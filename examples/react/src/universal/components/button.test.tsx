@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import { mockFlags, ldClientMock, resetLDMocks } from 'dist'
+import { mockFlags, ldClientMock, resetLDMocks } from 'jest-launchdarkly-mock'
 
 import Button from './button'
 

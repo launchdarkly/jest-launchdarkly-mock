@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import { ldClientMock } from 'dist'
+import { ldClientMock } from 'jest-launchdarkly-mock'
 
 import { Contact } from './contact'
 
