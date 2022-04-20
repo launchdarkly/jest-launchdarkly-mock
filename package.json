@@ -63,7 +63,7 @@
   },
   "packageManager": "yarn@3.2.0",
   "workspaces": [
-    "example"
+    "examples/*"
   ],
   "dependenciesMeta": {
     "universal-hot-reload@3.3.9": {
