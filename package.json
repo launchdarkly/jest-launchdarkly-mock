@@ -8,7 +8,8 @@
     "lint": "eslint --ext ts,tsx,js,jsx src",
     "test": "jest",
     "check": "yarn prettier && yarn lint && yarn tsc && yarn test",
-    "build": "rimraf dist && tsc"
+    "build": "rimraf dist && tsc",
+    "ts": "tsc"
   },
   "repository": {
     "type": "git",
