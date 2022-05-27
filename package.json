@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Easily unit test LaunchDarkly feature flagged components with jest",
   "main": "dist/index.js",
+  "files": ["dist"],
   "scripts": {
     "prettier": "prettier --write 'src/**/*.@(js|ts|tsx|json|css)'",
     "lint": "eslint --ext ts,tsx,js,jsx src",
