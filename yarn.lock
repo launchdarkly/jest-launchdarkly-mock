@@ -6000,7 +6000,7 @@ __metadata:
     typescript: ^4.6.2
   peerDependencies:
     launchdarkly-react-client-sdk: ^2.25.1
-    react: ^17.0.2
+    react: ">=17.0.2"
   dependenciesMeta:
     universal-hot-reload@3.3.9:
       unplugged: true
