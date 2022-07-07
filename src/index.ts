@@ -50,7 +50,7 @@ export const ldClientMock = {
 }
 
 mockAsyncWithLDProvider.mockImplementation(() => Promise.resolve((props: any) => props.children))
-mockLDProvider.mockImplementation((children: any) => children)
+mockLDProvider.mockImplementation((props: any) => props.children)
 mockUseLDClient.mockImplementation(() => ldClientMock)
 mockWithLDConsumer.mockImplementation(() => (children: any) => children)
 mockWithLDProvider.mockImplementation(() => (children: any) => children)
