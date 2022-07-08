@@ -11,6 +11,10 @@ All notable changes to the jest-launchdarkly-mock package will be documented in 
 ## [v0.1.1](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/releases/tag/v0.1.1)  8-Oct-2020
 - Initial release
 
+## [1.0.6] - 2022-07-08
+### Chores
+- Updated react peer dep to > 17
+
 ## [1.0.5] - 2022-06-14
 ### Chores
 - Updated react peer dep to > 17
