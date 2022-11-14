@@ -10312,10 +10312,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["loader-utils", [\
-        ["npm:1.4.0", {\
-          "packageLocation": "./.yarn/cache/loader-utils-npm-1.4.0-a56254a277-d150b15e7a.zip/node_modules/loader-utils/",\
+        ["npm:1.4.2", {\
+          "packageLocation": "./.yarn/cache/loader-utils-npm-1.4.2-b4537b2f88-eb6fb622ef.zip/node_modules/loader-utils/",\
           "packageDependencies": [\
-            ["loader-utils", "npm:1.4.0"],\
+            ["loader-utils", "npm:1.4.2"],\
             ["big.js", "npm:5.2.2"],\
             ["emojis-list", "npm:3.0.0"],\
             ["json5", "npm:1.0.1"]\
@@ -11516,7 +11516,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-docgen-typescript-loader", "virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#npm:3.7.2"],\
             ["@types/typescript", null],\
             ["@webpack-contrib/schema-utils", "virtual:e9cab57068cfb8de70b4a1ba61716122c04f746677351f6eda16632fe170158447a4d08e801fafa6ca4fb3ce89ab3799fc856fc0bf38d535c5528a1aca0e7f7d#npm:1.0.0-beta.0"],\
-            ["loader-utils", "npm:1.4.0"],\
+            ["loader-utils", "npm:1.4.2"],\
             ["react-docgen-typescript", "virtual:e9cab57068cfb8de70b4a1ba61716122c04f746677351f6eda16632fe170158447a4d08e801fafa6ca4fb3ce89ab3799fc856fc0bf38d535c5528a1aca0e7f7d#npm:1.22.0"],\
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"]\
           ],\
