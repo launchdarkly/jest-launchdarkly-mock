@@ -10508,7 +10508,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/makeerror-npm-1.0.11-f7d070b73c-9a62ec2d96.zip/node_modules/makeerror/",\
           "packageDependencies": [\
             ["makeerror", "npm:1.0.11"],\
-            ["tmpl", "npm:1.0.4"]\
+            ["tmpl", "npm:1.0.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12625,10 +12625,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["tmpl", [\
-        ["npm:1.0.4", {\
-          "packageLocation": "./.yarn/cache/tmpl-npm-1.0.4-35b37c2875-72c9333504.zip/node_modules/tmpl/",\
+        ["npm:1.0.5", {\
+          "packageLocation": "./.yarn/cache/tmpl-npm-1.0.5-d399ba37e2-cd922d9b85.zip/node_modules/tmpl/",\
           "packageDependencies": [\
-            ["tmpl", "npm:1.0.4"]\
+            ["tmpl", "npm:1.0.5"]\
           ],\
           "linkType": "HARD"\
         }]\
