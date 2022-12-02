@@ -35,7 +35,7 @@
     "lodash.snakecase": "^4.1.1"
   },
   "peerDependencies": {
-    "launchdarkly-react-client-sdk": "^2.25.1",
+    "launchdarkly-react-client-sdk": "^3.0.0-alpha.2",
     "react": ">=17.0.2"
   },
   "devDependencies": {
@@ -55,8 +55,8 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^27.5.1",
-    "launchdarkly-js-client-sdk": "^2.20.2",
-    "launchdarkly-react-client-sdk": "^2.25.1",
+    "launchdarkly-js-client-sdk": "^3.0.0-alpha.5",
+    "launchdarkly-react-client-sdk": "^3.0.0-alpha.2",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-test-renderer": "^17.0.2",
