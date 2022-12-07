@@ -11,6 +11,20 @@ All notable changes to the jest-launchdarkly-mock package will be documented in 
 ## [v0.1.1](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/releases/tag/v0.1.1)  8-Oct-2020
 - Initial release
 
+## [2.0.0] - 2022-12-07
+The latest version of jest-launchdarkly-mock supports LaunchDarkly's new custom contexts feature. Contexts are an evolution of a previously-existing concept, "users." For more information please read the [JavaScript SDK's latest release notes](https://github.com/launchdarkly/js-client-sdk/releases/tag/3.0.0).
+
+For detailed information about this version, please refer to the list below. For information on how to upgrade from the previous version, please read the [migration guide](https://docs.launchdarkly.com/guides/infrastructure/unit-tests/?q=jest#migrating-from-users-to-contexts).
+
+### Added:
+
+- The `getContext` mock function has been added.
+
+### Removed:
+
+- The `getUser` mock function has been removed. Please use `getContext` instead.
+- The `alias` mock function has been removed.
+
 ## [1.0.6] - 2022-07-08
 ### Chores
 - Updated react peer dep to > 17
