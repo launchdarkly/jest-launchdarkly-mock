@@ -49,11 +49,13 @@ export const ldClientMock = {
   waitUntilReady: jest.fn(),
 }
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 mockAsyncWithLDProvider.mockImplementation(() => Promise.resolve((props: any) => props.children))
 mockLDProvider.mockImplementation((props: any) => props.children)
 mockUseLDClient.mockImplementation(() => ldClientMock)
 mockWithLDConsumer.mockImplementation(() => (children: any) => children)
 mockWithLDProvider.mockImplementation(() => (children: any) => children)
+/* eslint-enable @typescript-eslint/no-explicit-any */
 
 export const mockFlags = (flags: LDFlagSet) => {
   mockUseFlags.mockImplementation(() => {
