@@ -11,6 +11,11 @@ All notable changes to the jest-launchdarkly-mock package will be documented in 
 ## [v0.1.1](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/releases/tag/v0.1.1)  8-Oct-2020
 - Initial release
 
+## [2.0.1] - 2022-12-13
+### Added:
+
+- The `useLDClientError` mock function has been added. Thank you @manelmadeira.
+
 ## [2.0.0] - 2022-12-07
 The latest version of jest-launchdarkly-mock supports LaunchDarkly's new custom contexts feature. Contexts are an evolution of a previously-existing concept, "users." For more information please read the [JavaScript SDK's latest release notes](https://github.com/launchdarkly/js-client-sdk/releases/tag/3.0.0).
 
