@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Run eslint
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check typescript
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
@@ -47,7 +47,7 @@ jobs:
     name: Run tests
     needs: [lint, tsc] # ensure tests are run only after eslint and tsc pass
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
