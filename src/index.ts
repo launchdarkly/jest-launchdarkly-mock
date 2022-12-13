@@ -6,6 +6,7 @@ jest.mock('launchdarkly-react-client-sdk', () => {
     LDProvider: jest.fn(),
     useLDClient: jest.fn(),
     useFlags: jest.fn(),
+    useLDClientError: jest.fn(),
     withLDConsumer: jest.fn(),
     withLDProvider: jest.fn(),
   }
