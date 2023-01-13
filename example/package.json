@@ -25,7 +25,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
-    "launchdarkly-react-client-sdk": "^2.25.1",
+    "launchdarkly-react-client-sdk": "^3.0.1",
     "lodash.camelcase": "^4.3.0",
     "lodash.kebabcase": "^4.1.1",
     "lodash.snakecase": "^4.1.1",
@@ -58,7 +58,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^27.5.1",
     "jest-launchdarkly-mock": "workspace:.",
-    "launchdarkly-js-client-sdk": "^2.20.2",
+    "launchdarkly-js-client-sdk": "^3.0.0",
     "prettier": "^2.5.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "ts-jest": "^27.1.3",

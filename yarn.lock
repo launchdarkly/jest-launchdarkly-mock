@@ -4755,8 +4755,8 @@ __metadata:
     express: ^4.17.3
     jest: ^27.5.1
     jest-launchdarkly-mock: "workspace:."
-    launchdarkly-js-client-sdk: ^2.20.2
-    launchdarkly-react-client-sdk: ^2.25.1
+    launchdarkly-js-client-sdk: ^3.0.0
+    launchdarkly-react-client-sdk: ^3.0.1
     lodash.camelcase: ^4.3.0
     lodash.kebabcase: ^4.1.1
     lodash.snakecase: ^4.1.1
@@ -6496,16 +6496,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"launchdarkly-js-client-sdk@npm:2.20.2, launchdarkly-js-client-sdk@npm:^2.20.2":
-  version: 2.20.2
-  resolution: "launchdarkly-js-client-sdk@npm:2.20.2"
-  dependencies:
-    escape-string-regexp: ^1.0.5
-    launchdarkly-js-sdk-common: 3.5.1
-  checksum: 9b5a60ed5f14a8275aa4751d8883105a40666d3fbab389433d1064c4b5f3203c9bfa20f23200c1e3d1abf7e9b7ca69e47a03493975cbbb4fe6d9c626137e5081
-  languageName: node
-  linkType: hard
-
 "launchdarkly-js-client-sdk@npm:^3.0.0":
   version: 3.0.0
   resolution: "launchdarkly-js-client-sdk@npm:3.0.0"
@@ -6513,17 +6503,6 @@ __metadata:
     escape-string-regexp: ^4.0.0
     launchdarkly-js-sdk-common: 5.0.0
   checksum: 9a4e1857c7d5dc7b9f437c7d5b496e8b4e84bbf2936084b6195b534f3f0f6b6cb23b60b835e6292223e8777ea8fd5045c5c40d7227432f7daad444cd02e26c46
-  languageName: node
-  linkType: hard
-
-"launchdarkly-js-sdk-common@npm:3.5.1":
-  version: 3.5.1
-  resolution: "launchdarkly-js-sdk-common@npm:3.5.1"
-  dependencies:
-    base64-js: ^1.3.0
-    fast-deep-equal: ^2.0.1
-    uuid: ^3.3.2
-  checksum: 642b8e0ed67b4734187075d229eed7f16adda32f6f3c562868c38da572901cc23e51e4f9a33d7c51a033e75512a6b222e565566be0e7d64e9935a638887858af
   languageName: node
   linkType: hard
 
@@ -6538,21 +6517,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"launchdarkly-react-client-sdk@npm:^2.25.1":
-  version: 2.25.1
-  resolution: "launchdarkly-react-client-sdk@npm:2.25.1"
-  dependencies:
-    hoist-non-react-statics: ^3.3.2
-    launchdarkly-js-client-sdk: 2.20.2
-    lodash.camelcase: ^4.3.0
-    uuid: ^3.3.2
-  peerDependencies:
-    react: ^16.6.3 || ^17.0.0
-    react-dom: ^16.8.4 || ^17.0.0
-  checksum: 06f702eaab8c0d3d47175f10805eaaa13ffcae5e883f29892174fc7d3a6da05dd4885e0e383d1d106b5cb513e947ec5502cbd07ca4cac9fb3b0123973187fd20
-  languageName: node
-  linkType: hard
-
 "launchdarkly-react-client-sdk@npm:^3.0.0":
   version: 3.0.0
   resolution: "launchdarkly-react-client-sdk@npm:3.0.0"
@@ -6564,6 +6528,20 @@ __metadata:
     react: ^16.6.3 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.4 || ^17.0.0 || ^18.0.0
   checksum: a011e7c9b3765c7866410bd034025eb4eda3833bdb070ef62ac679f28640dabbdc391363b94caa34e040b49088e219867ea97922a170c86cffa58294286b664e
+  languageName: node
+  linkType: hard
+
+"launchdarkly-react-client-sdk@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "launchdarkly-react-client-sdk@npm:3.0.1"
+  dependencies:
+    hoist-non-react-statics: ^3.3.2
+    launchdarkly-js-client-sdk: ^3.0.0
+    lodash.camelcase: ^4.3.0
+  peerDependencies:
+    react: ^16.6.3 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.4 || ^17.0.0 || ^18.0.0
+  checksum: 4543886e75c84cf9ddf5ae91588c4e5fed186521d67674e4578f37a461f9b5fe88e0a57ffed39f9d19262d4366fdecccec5972bfa0076addc8429797395ca4e0
   languageName: node
   linkType: hard
 
@@ -8946,7 +8924,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:^3.1.0, uuid@npm:^3.3.2":
+"uuid@npm:^3.1.0":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
   bin:
