@@ -11,6 +11,10 @@ All notable changes to the jest-launchdarkly-mock package will be documented in 
 ## [v0.1.1](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/releases/tag/v0.1.1)  8-Oct-2020
 - Initial release
 
+## [2.0.2] - 2023-01-13
+### Fixed:
+- Updated example app's react and js sdk versions to fix typescript issues when running tests
+
 ## [2.0.1] - 2022-12-13
 ### Added:
 
