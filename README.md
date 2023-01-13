@@ -36,7 +36,8 @@ module.exports = {
 ## Usage
 Use the only 3 apis for test cases:
 
-* `mockFlags(flags: LDFlagSet)`: mock flags at the start of each test case.
+* `mockFlags(flags: LDFlagSet)`: mock flags at the start of each test case. Only mocks
+flags returned by the `useFlags` hook.
 
 * `ldClientMock`: a jest mock of the [ldClient](https://launchdarkly.github.io/js-client-sdk/interfaces/_launchdarkly_js_client_sdk_.ldclient.html). All
 methods of this object are jest mocks.
