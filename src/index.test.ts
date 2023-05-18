@@ -107,7 +107,7 @@ describe('main', () => {
     expect(current2).toEqual({})
   })
 
-  test('initial mockFlags value', () => {
+  test('initial useFlags value', () => {
     const {
       result: { current },
     } = renderHook(() => useFlags())
