@@ -9,6 +9,11 @@ describe('button', () => {
     resetLDMocks()
   })
 
+  it('flags are falsey when not explicity mocked with mockFlags', () => {
+    const { getByText } = render(<Button />)
+    expect(getByText('button disabled')).toBeTruthy()
+  })
+
   // mocking camelCased flags
   it('camelCased flag on', () => {
     mockFlags({ devTestFlag: true })
