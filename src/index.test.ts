@@ -91,11 +91,28 @@ describe('main', () => {
 
   test('reset all flag mocks', () => {
     mockFlags({ devTestFlag: true })
-    renderHook(() => useFlags())
+
+    const {
+      result: { current },
+    } = renderHook(() => useFlags())
+
+    expect(current.devTestFlag).toBeTruthy()
 
     resetLDMocks()
 
-    expect(useFlags).not.toHaveBeenCalled()
+    const {
+      result: { current: current2 },
+    } = renderHook(() => useFlags())
+
+    expect(current2).toEqual({})
+  })
+
+  test('initial useFlags value', () => {
+    const {
+      result: { current },
+    } = renderHook(() => useFlags())
+
+    expect(current).toEqual({})
   })
 
   test('reset ldClientMock ', () => {

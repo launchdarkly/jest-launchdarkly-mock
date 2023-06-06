@@ -1,6 +1,6 @@
 ## Contributing to jest-launchdarkly-mock
  
-LaunchDarkly has published an [SDK contributor's guide](https://docs.launchdarkly.com/docs/sdk-contributors-guide) that 
+LaunchDarkly has published an [SDK contributor's guide](https://docs.launchdarkly.com/sdk/concepts/contributors-guide) that 
 provides a detailed explanation of how our SDKs work. See below for additional information on how to contribute to 
 this mock library.
  

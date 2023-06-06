@@ -5,7 +5,7 @@ jest.mock('launchdarkly-react-client-sdk', () => {
     camelCaseKeys,
     LDProvider: jest.fn(),
     useLDClient: jest.fn(),
-    useFlags: jest.fn(),
+    useFlags: jest.fn(() => ({})),
     useLDClientError: jest.fn(),
     withLDConsumer: jest.fn(),
     withLDProvider: jest.fn(),
@@ -75,7 +75,7 @@ export const mockFlags = (flags: LDFlagSet) => {
 }
 
 export const resetLDMocks = () => {
-  mockUseFlags.mockReset()
+  mockUseFlags.mockImplementation(() => ({}))
 
   Object.keys(ldClientMock).forEach((k) => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
