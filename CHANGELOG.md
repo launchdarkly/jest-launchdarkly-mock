@@ -11,6 +11,10 @@ All notable changes to the jest-launchdarkly-mock package will be documented in 
 ## [v0.1.1](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/releases/tag/v0.1.1)  8-Oct-2020
 - Initial release
 
+## [2.1.0] - 2023-06-06
+### Changed:
+- useFlags now returns an empty object by default, which matches its actual implementation.
+
 ## [2.0.3] - 2023-01-13
 ### Changed:
 - Improved mockFlags docs to make it clear it only works with useFlags
