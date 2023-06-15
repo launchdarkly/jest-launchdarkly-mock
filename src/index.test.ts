@@ -1,8 +1,12 @@
 import { renderHook } from '@testing-library/react-hooks'
 import { useFlags, useLDClient, useLDClientError, LDProvider, asyncWithLDProvider } from 'launchdarkly-react-client-sdk'
-import { mockFlags, ldClientMock, resetLDMocks } from './index'
+import { mockFlags, ldClientMock, resetLDMocks, setupMocks } from './index'
 
 describe('main', () => {
+  beforeEach(() => {
+    setupMocks()
+  })
+
   test('mock kebab-case correctly', () => {
     mockFlags({ 'dev-test-flag': true })
 
