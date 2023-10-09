@@ -7,18 +7,14 @@ const useLDContext = () => {
 
   useEffect(() => {
     const ctx = ldClient?.getContext()
-    try {
-      const mergedCtx: LDContext = {
-        kind: 'multi',
-        user: (ctx as any).user,
-        account: {
-          key: 'account-test-key-1',
-        },
-      }
-      ldClient?.identify(mergedCtx)
-    } catch (e) {
-      console.log(`exception: ${e}`)
+    const mergedCtx: LDContext = {
+      kind: 'multi',
+      user: (ctx as any).user,
+      account: {
+        key: 'account-test-key-1',
+      },
     }
+    ldClient?.identify(mergedCtx)
   }, [ldClient])
 }
 

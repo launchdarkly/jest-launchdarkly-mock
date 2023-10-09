@@ -12,15 +12,7 @@
     "webpack": "webpack -c webpack.config.client.js",
     "start": "yarn webpack && yarn server"
   },
-  "keywords": [
-    "storybook",
-    "launchdarkly",
-    "react",
-    "typescript",
-    "feature",
-    "flags",
-    "ux"
-  ],
+  "keywords": ["storybook", "launchdarkly", "react", "typescript", "feature", "flags", "ux"],
   "author": "Yusinto Ngadiman",
   "license": "ISC",
   "dependencies": {
@@ -35,6 +27,7 @@
     "react-router-dom": "^5.3.0"
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^8.0.1",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
@@ -57,7 +50,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^27.5.1",
-    "jest-launchdarkly-mock": "workspace:.",
+    "jest-launchdarkly-mock": "^2.1.0",
     "launchdarkly-js-client-sdk": "^3.0.0",
     "prettier": "^2.5.1",
     "react-docgen-typescript-loader": "^3.7.2",
