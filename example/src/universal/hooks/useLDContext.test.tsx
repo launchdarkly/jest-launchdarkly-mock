@@ -1,7 +1,13 @@
+import React from 'react'
 import { ldClientMock, resetLDMocks } from 'jest-launchdarkly-mock'
-import { renderHook } from '@testing-library/react-hooks'
+import { render } from '@testing-library/react'
 
 import useLDContext from './useLDContext'
+
+const TestApp = () => {
+  useLDContext()
+  return <></>
+}
 
 describe('identify', () => {
   afterEach(() => {
@@ -17,7 +23,7 @@ describe('identify', () => {
         },
       }
     })
-    renderHook(() => useLDContext())
+    render(<TestApp />)
     expect(ldClientMock.identify).toBeCalled()
   })
 })
