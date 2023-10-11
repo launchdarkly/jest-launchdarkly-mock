@@ -3,12 +3,12 @@ import { renderHook } from '@testing-library/react-hooks'
 
 import useLDContext from './useLDContext'
 
-describe('button', () => {
+describe('identify', () => {
   afterEach(() => {
     resetLDMocks()
   })
 
-  it('identify', () => {
+  test('identify', () => {
     ldClientMock.getContext.mockImplementation(() => {
       return {
         kind: 'multi',
