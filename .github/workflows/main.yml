@@ -7,7 +7,7 @@ jobs:
     name: Run eslint
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '16.x'
       - name: Get yarn cache directory path
@@ -27,7 +27,7 @@ jobs:
     name: Check typescript
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '16.x'
       - name: Get yarn cache directory path
@@ -48,7 +48,7 @@ jobs:
     needs: [lint, tsc] # ensure tests are run only after eslint and tsc pass
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '16.x'
       - name: Get yarn cache directory path
