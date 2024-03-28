@@ -9167,10 +9167,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["ip", [\
-        ["npm:1.1.5", {\
-          "packageLocation": "./.yarn/cache/ip-npm-1.1.5-af36318aa6-30133981f0.zip/node_modules/ip/",\
+        ["npm:1.1.9", {\
+          "packageLocation": "./.yarn/cache/ip-npm-1.1.9-e72dd3cc0a-b6d91fd45a.zip/node_modules/ip/",\
           "packageDependencies": [\
-            ["ip", "npm:1.1.5"]\
+            ["ip", "npm:1.1.9"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12322,7 +12322,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/socks-npm-2.6.2-94c1dcb8b8-dd91942930.zip/node_modules/socks/",\
           "packageDependencies": [\
             ["socks", "npm:2.6.2"],\
-            ["ip", "npm:1.1.5"],\
+            ["ip", "npm:1.1.9"],\
             ["smart-buffer", "npm:4.2.0"]\
           ],\
           "linkType": "HARD"\
