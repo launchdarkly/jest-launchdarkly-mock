@@ -4653,7 +4653,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-util", "npm:27.5.1"],\
             ["jest-validate", "npm:27.5.1"],\
             ["jest-watcher", "npm:27.5.1"],\
-            ["micromatch", "npm:4.0.4"],\
+            ["micromatch", "npm:4.0.8"],\
             ["node-notifier", null],\
             ["rimraf", "npm:3.0.2"],\
             ["slash", "npm:3.0.0"],\
@@ -4806,7 +4806,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-haste-map", "npm:27.5.1"],\
             ["jest-regex-util", "npm:27.5.1"],\
             ["jest-util", "npm:27.5.1"],\
-            ["micromatch", "npm:4.0.4"],\
+            ["micromatch", "npm:4.0.8"],\
             ["pirates", "npm:4.0.5"],\
             ["slash", "npm:3.0.0"],\
             ["source-map", "npm:0.6.1"],\
@@ -8600,7 +8600,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nodelib/fs.walk", "npm:1.2.4"],\
             ["glob-parent", "npm:5.1.2"],\
             ["merge2", "npm:1.4.1"],\
-            ["micromatch", "npm:4.0.4"]\
+            ["micromatch", "npm:4.0.8"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9764,7 +9764,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-runner", "npm:27.5.1"],\
             ["jest-util", "npm:27.5.1"],\
             ["jest-validate", "npm:27.5.1"],\
-            ["micromatch", "npm:4.0.4"],\
+            ["micromatch", "npm:4.0.8"],\
             ["parse-json", "npm:5.2.0"],\
             ["pretty-format", "npm:27.5.1"],\
             ["slash", "npm:3.0.0"],\
@@ -9871,7 +9871,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-serializer", "npm:27.5.1"],\
             ["jest-util", "npm:27.5.1"],\
             ["jest-worker", "npm:27.5.1"],\
-            ["micromatch", "npm:4.0.4"],\
+            ["micromatch", "npm:4.0.8"],\
             ["walker", "npm:1.0.7"]\
           ],\
           "linkType": "HARD"\
@@ -10014,7 +10014,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/stack-utils", "npm:2.0.0"],\
             ["chalk", "npm:4.1.0"],\
             ["graceful-fs", "npm:4.2.9"],\
-            ["micromatch", "npm:4.0.4"],\
+            ["micromatch", "npm:4.0.8"],\
             ["pretty-format", "npm:27.5.1"],\
             ["slash", "npm:3.0.0"],\
             ["stack-utils", "npm:2.0.5"]\
@@ -10815,10 +10815,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["micromatch", [\
-        ["npm:4.0.4", {\
-          "packageLocation": "./.yarn/cache/micromatch-npm-4.0.4-9fdcbb7a0e-ef3d1c88e7.zip/node_modules/micromatch/",\
+        ["npm:4.0.8", {\
+          "packageLocation": "./.yarn/cache/micromatch-npm-4.0.8-c9570e4aca-79920eb634.zip/node_modules/micromatch/",\
           "packageDependencies": [\
-            ["micromatch", "npm:4.0.4"],\
+            ["micromatch", "npm:4.0.8"],\
             ["braces", "npm:3.0.3"],\
             ["picomatch", "npm:2.3.1"]\
           ],\
@@ -13053,7 +13053,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack", "npm:5.28.0"],\
             ["chalk", "npm:4.1.2"],\
             ["enhanced-resolve", "npm:5.9.2"],\
-            ["micromatch", "npm:4.0.4"],\
+            ["micromatch", "npm:4.0.8"],\
             ["semver", "npm:7.3.5"],\
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=5d3a66"],\
             ["webpack", "virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#npm:5.95.0"]\
