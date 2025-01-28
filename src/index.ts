@@ -58,18 +58,17 @@ mockWithLDProvider.mockImplementation(() => (children: any) => children)
 /* eslint-enable @typescript-eslint/no-explicit-any */
 
 export const mockFlags = (flags: LDFlagSet) => {
+  const result: LDFlagSet = {}
+  Object.keys(flags).forEach((k) => {
+    const kebab = kebabCase(k)
+    const camel = camelCase(k)
+    const snake = snakeCase(k)
+    result[kebab] = flags[k]
+    result[camel] = flags[k]
+    result[snake] = flags[k]
+    result[k] = flags[k]
+  })
   mockUseFlags.mockImplementation(() => {
-    const result: LDFlagSet = {}
-    Object.keys(flags).forEach((k) => {
-      const kebab = kebabCase(k)
-      const camel = camelCase(k)
-      const snake = snakeCase(k)
-      result[kebab] = flags[k]
-      result[camel] = flags[k]
-      result[snake] = flags[k]
-      result[k] = flags[k]
-    })
-
     return result
   })
 }
