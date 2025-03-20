@@ -4394,19 +4394,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@babel/runtime", [\
-        ["npm:7.17.0", {\
-          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.17.0-447a597408-1864ac3c6a.zip/node_modules/@babel/runtime/",\
+        ["npm:7.26.10", {\
+          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.26.10-d01a90d446-22d2e0abb8.zip/node_modules/@babel/runtime/",\
           "packageDependencies": [\
-            ["@babel/runtime", "npm:7.17.0"],\
-            ["regenerator-runtime", "npm:0.13.7"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:7.17.2", {\
-          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.17.2-ec60bc114d-a48702d271.zip/node_modules/@babel/runtime/",\
-          "packageDependencies": [\
-            ["@babel/runtime", "npm:7.17.2"],\
-            ["regenerator-runtime", "npm:0.13.7"]\
+            ["@babel/runtime", "npm:7.26.10"],\
+            ["regenerator-runtime", "npm:0.14.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5053,7 +5045,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@testing-library/dom", "npm:8.11.3"],\
             ["@babel/code-frame", "npm:7.10.4"],\
-            ["@babel/runtime", "npm:7.17.0"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["@types/aria-query", "npm:4.2.2"],\
             ["aria-query", "npm:5.0.0"],\
             ["chalk", "npm:4.1.2"],\
@@ -5076,7 +5068,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@testing-library-react-virtual-6ad81fdeb1/0/cache/@testing-library-react-npm-12.1.3-9cd5a455e7-2f059e93dc.zip/node_modules/@testing-library/react/",\
           "packageDependencies": [\
             ["@testing-library/react", "virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#npm:12.1.3"],\
-            ["@babel/runtime", "npm:7.17.0"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["@testing-library/dom", "npm:8.11.3"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/react-dom", "npm:17.0.13"],\
@@ -5104,7 +5096,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@testing-library-react-hooks-virtual-835e57347d/0/cache/@testing-library-react-hooks-npm-7.0.2-da146b13d2-27c6169b5c.zip/node_modules/@testing-library/react-hooks/",\
           "packageDependencies": [\
             ["@testing-library/react-hooks", "virtual:4919200c2f967ac19daea58f88285c2db00ba0b5b16640ec44808ac4c1c6f3ba6097a44528de19f2dbd7afeabe0b572fd1d685eb4ca5617a405b93b29ae6fe84#npm:7.0.2"],\
-            ["@babel/runtime", "npm:7.17.0"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/react-dom", "npm:17.0.11"],\
             ["@types/react-test-renderer", "npm:17.0.1"],\
@@ -6576,7 +6568,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/babel-plugin-macros-npm-3.1.0-320e781f4e-765de4abeb.zip/node_modules/babel-plugin-macros/",\
           "packageDependencies": [\
             ["babel-plugin-macros", "npm:3.1.0"],\
-            ["@babel/runtime", "npm:7.17.0"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["cosmiconfig", "npm:7.0.1"],\
             ["resolve", "patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=c3c19d"]\
           ],\
@@ -6811,7 +6803,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:a9a19b630a588155c92f4ae8a8db8144917ee83e3cd36bb76901eb84a4f5c22dc9e3132b483ed08b52ebbd0b97f69550387746aa970daf04db052b2bb054ab12#npm:7.16.11"],\
             ["@babel/preset-react", "virtual:a9a19b630a588155c92f4ae8a8db8144917ee83e3cd36bb76901eb84a4f5c22dc9e3132b483ed08b52ebbd0b97f69550387746aa970daf04db052b2bb054ab12#npm:7.16.7"],\
             ["@babel/preset-typescript", "virtual:a9a19b630a588155c92f4ae8a8db8144917ee83e3cd36bb76901eb84a4f5c22dc9e3132b483ed08b52ebbd0b97f69550387746aa970daf04db052b2bb054ab12#npm:7.16.7"],\
-            ["@babel/runtime", "npm:7.17.2"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["babel-plugin-macros", "npm:3.1.0"],\
             ["babel-plugin-transform-react-remove-prop-types", "npm:0.4.24"]\
           ],\
@@ -9053,7 +9045,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/history-npm-4.10.1-ee217563ae-addd84bc46.zip/node_modules/history/",\
           "packageDependencies": [\
             ["history", "npm:4.10.1"],\
-            ["@babel/runtime", "npm:7.17.2"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["loose-envify", "npm:1.4.0"],\
             ["resolve-pathname", "npm:3.0.0"],\
             ["tiny-invariant", "npm:1.2.0"],\
@@ -10889,7 +10881,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/mini-create-react-context-virtual-97a0ef2314/0/cache/mini-create-react-context-npm-0.4.1-06f382591b-f8cb2c7738.zip/node_modules/mini-create-react-context/",\
           "packageDependencies": [\
             ["mini-create-react-context", "virtual:a21fb496811c743ebec095638b760e8b6d31349f592dfe763a4e74c570f9d9fe0d12f434ce1d79bda70af67be0cc8518f5a97deb404ae20e7cab66d2e556a610#npm:0.4.1"],\
-            ["@babel/runtime", "npm:7.17.2"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["@types/prop-types", null],\
             ["@types/react", "npm:17.0.39"],\
             ["prop-types", "npm:15.8.1"],\
@@ -11831,7 +11823,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/react-error-boundary-virtual-aa28557e67/0/cache/react-error-boundary-npm-3.1.4-2310dba89e-f36270a5d7.zip/node_modules/react-error-boundary/",\
           "packageDependencies": [\
             ["react-error-boundary", "virtual:835e57347d9dc807310b4d0b6e8ddf835a81bd81b550d56673a3fc87dc3a958a66488efa2256e7e07634424d01f83f330dc8ec45deaf892a9f4776c10dd42d78#npm:3.1.4"],\
-            ["@babel/runtime", "npm:7.17.0"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["@types/react", "npm:17.0.39"],\
             ["react", "npm:17.0.2"]\
           ],\
@@ -11870,7 +11862,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/react-router-virtual-a21fb49681/0/cache/react-router-npm-5.2.1-ea754d7473-7daae084bf.zip/node_modules/react-router/",\
           "packageDependencies": [\
             ["react-router", "virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#npm:5.2.1"],\
-            ["@babel/runtime", "npm:7.17.2"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["@types/react", "npm:17.0.39"],\
             ["history", "npm:4.10.1"],\
             ["hoist-non-react-statics", "npm:3.3.2"],\
@@ -11902,7 +11894,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/react-router-dom-virtual-eb2fcaf4a5/0/cache/react-router-dom-npm-5.3.0-aa9adb5bec-47584fd629.zip/node_modules/react-router-dom/",\
           "packageDependencies": [\
             ["react-router-dom", "virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#npm:5.3.0"],\
-            ["@babel/runtime", "npm:7.17.2"],\
+            ["@babel/runtime", "npm:7.26.10"],\
             ["@types/react", "npm:17.0.39"],\
             ["history", "npm:4.10.1"],\
             ["loose-envify", "npm:1.4.0"],\
@@ -12011,10 +12003,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["regenerator-runtime", [\
-        ["npm:0.13.7", {\
-          "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.13.7-41bcbe64ea-52b66e6669.zip/node_modules/regenerator-runtime/",\
+        ["npm:0.14.1", {\
+          "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.14.1-a6c97c609a-9f57c93277.zip/node_modules/regenerator-runtime/",\
           "packageDependencies": [\
-            ["regenerator-runtime", "npm:0.13.7"]\
+            ["regenerator-runtime", "npm:0.14.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12024,7 +12016,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/regenerator-transform-npm-0.14.5-40045884e9-a467a3b652.zip/node_modules/regenerator-transform/",\
           "packageDependencies": [\
             ["regenerator-transform", "npm:0.14.5"],\
-            ["@babel/runtime", "npm:7.17.2"]\
+            ["@babel/runtime", "npm:7.26.10"]\
           ],\
           "linkType": "HARD"\
         }]\
