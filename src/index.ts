@@ -49,13 +49,17 @@ export const ldClientMock = {
   waitUntilReady: jest.fn(),
 }
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-mockAsyncWithLDProvider.mockImplementation(() => Promise.resolve((props: any) => props.children))
-mockLDProvider.mockImplementation((props: any) => props.children)
-mockUseLDClient.mockImplementation(() => ldClientMock)
-mockWithLDConsumer.mockImplementation(() => (children: any) => children)
-mockWithLDProvider.mockImplementation(() => (children: any) => children)
-/* eslint-enable @typescript-eslint/no-explicit-any */
+export const setupMocks = () => {
+  /* eslint-disable @typescript-eslint/no-explicit-any */
+  mockAsyncWithLDProvider.mockImplementation(() => Promise.resolve((props: any) => props.children))
+  mockLDProvider.mockImplementation((props: any) => props.children)
+  mockUseLDClient.mockImplementation(() => ldClientMock)
+  mockUseFlags.mockImplementation(() => ({}))
+  mockWithLDConsumer.mockImplementation(() => (children: any) => children)
+  mockWithLDProvider.mockImplementation(() => (children: any) => children)
+  /* eslint-enable @typescript-eslint/no-explicit-any */
+}
+setupMocks()
 
 export const mockFlags = (flags: LDFlagSet) => {
   const result: LDFlagSet = {}
@@ -74,7 +78,7 @@ export const mockFlags = (flags: LDFlagSet) => {
 }
 
 export const resetLDMocks = () => {
-  mockUseFlags.mockImplementation(() => ({}))
+  setupMocks()
 
   Object.keys(ldClientMock).forEach((k) => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
