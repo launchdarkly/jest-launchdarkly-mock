@@ -33,15 +33,16 @@ const mockWithLDConsumer = withLDConsumer as jest.Mock
 const mockWithLDProvider = withLDProvider as jest.Mock
 
 export const ldClientMock = {
-  track: jest.fn(),
-  identify: jest.fn(),
+  addHook: jest.fn(),
   allFlags: jest.fn(),
   close: jest.fn(),
   flush: jest.fn(),
   getContext: jest.fn(),
+  identify: jest.fn(),
   off: jest.fn(),
   on: jest.fn(),
   setStreaming: jest.fn(),
+  track: jest.fn(),
   variation: jest.fn(),
   variationDetail: jest.fn(),
   waitForInitialization: jest.fn(),
