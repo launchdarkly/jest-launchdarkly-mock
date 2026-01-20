@@ -7632,10 +7632,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["diff", [\
-        ["npm:4.0.2", {\
-          "packageLocation": "./.yarn/cache/diff-npm-4.0.2-73133c7102-f2c09b0ce4.zip/node_modules/diff/",\
+        ["npm:4.0.4", {\
+          "packageLocation": "./.yarn/cache/diff-npm-4.0.4-e9ea573423-e3f1c36877.zip/node_modules/diff/",\
           "packageDependencies": [\
-            ["diff", "npm:4.0.2"]\
+            ["diff", "npm:4.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13086,7 +13086,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["acorn-walk", "npm:8.2.0"],\
             ["arg", "npm:4.1.3"],\
             ["create-require", "npm:1.1.1"],\
-            ["diff", "npm:4.0.2"],\
+            ["diff", "npm:4.0.4"],\
             ["make-error", "npm:1.3.6"],\
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=5d3a66"],\
             ["v8-compile-cache-lib", "npm:3.0.0"],\
