@@ -5,6 +5,24 @@ All notable changes to the jest-launchdarkly-mock package will be documented in 
 [Semantic Versioning](https://semver.org).
 
 
+## [2.2.0](https://github.com/launchdarkly/jest-launchdarkly-mock/compare/jest-launchdarkly-mock-v2.1.0...jest-launchdarkly-mock-v2.2.0) (2026-02-25)
+
+
+### Features
+
+* **withLDProvider:** adding mock support for withLDProvider ([#9](https://github.com/launchdarkly/jest-launchdarkly-mock/issues/9)) ([488a33d](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/488a33d5272bf47b59b85e6afe8dfa954b7ce032))
+
+
+### Bug Fixes
+
+* adding missing functions ([af6d0f4](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/af6d0f40d2a4a615382e0a0c13e0aba4e0e87cbc))
+* adding missing functions ([19dd6fd](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/19dd6fd79d2d4e8b269a0b7258c23d15c5ada28f))
+* adding missing functions ([8d72df3](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/8d72df3110bee9104b6413f29b7c82d6c6bceba7))
+* mockWithLDConsumer should not return null ([806bd8a](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/806bd8a2d7ebb2d6e08a39c67ea8fc9abaa7b816))
+* mockWithLDConsumer should not return null ([e9cc53a](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/e9cc53ad93a523c76f0ecc3ad09e2ca392dc73d2))
+* update LDProvider mock to match implementation signature ([d1c6eb6](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/d1c6eb6bfee16ad154f4c62d5adba60e879a7a11))
+* update LDProvider mock to match implementation signature ([6389c5f](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/6389c5f3128339008919f13ed86c5848c9a13a02))
+
 ## [v0.2.1](https://github.com/launchdarkly-labs/jest-launchdarkly-mock/releases/tag/v0.2.1)  28-Jun-2021
 - Added support to mock `withLDProvider`
 
