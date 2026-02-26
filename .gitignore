@@ -68,6 +68,10 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# Yarn PnP for zero install workspaces
+.yarn/install-state.gz
+.yarn/unplugged
+
 # dotenv environment variables file
 .env
 .env.test

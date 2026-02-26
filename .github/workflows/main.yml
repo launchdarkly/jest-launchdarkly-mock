@@ -62,4 +62,5 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - run: CYPRESS_INSTALL_BINARY=0 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --immutable --immutable-cache
+      - run: yarn build
       - run: yarn test
