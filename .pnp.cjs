@@ -4578,7 +4578,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["camelcase", "npm:5.3.1"],\
             ["find-up", "npm:4.1.0"],\
             ["get-package-type", "npm:0.1.0"],\
-            ["js-yaml", "npm:3.14.0"],\
+            ["js-yaml", "npm:3.14.2"],\
             ["resolve-from", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
@@ -10271,10 +10271,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["js-yaml", [\
-        ["npm:3.14.0", {\
-          "packageLocation": "./.yarn/cache/js-yaml-npm-3.14.0-7ecf74b3d2-a1a47c912b.zip/node_modules/js-yaml/",\
+        ["npm:3.14.2", {\
+          "packageLocation": "./.yarn/cache/js-yaml-npm-3.14.2-debd9d20c3-626fc20773.zip/node_modules/js-yaml/",\
           "packageDependencies": [\
-            ["js-yaml", "npm:3.14.0"],\
+            ["js-yaml", "npm:3.14.2"],\
             ["argparse", "npm:1.0.10"],\
             ["esprima", "npm:4.0.1"]\
           ],\
