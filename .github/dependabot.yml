@@ -6,3 +6,4 @@ updates:
     directory: '.github/workflows'
     schedule:
       interval: 'weekly'
+      prefix: "fix(deps):"
