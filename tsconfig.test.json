@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "paths": {
+      "jest-launchdarkly-mock": ["./src/index.ts"]
+    }
+  },
+  "exclude": ["dist", "node_modules"]
+}

@@ -1,5 +1,9 @@
 module.exports = {
   preset: 'ts-jest',
+  testEnvironment: 'jsdom',
   setupFiles: ['./src/index.ts'],
-  testPathIgnorePatterns: ['<rootDir>/example/', '<rootDir>/node_modules/'],
+  moduleDirectories: ['node_modules', '<rootDir>/node_modules'],
+  transform: {
+    '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.test.json' }],
+  }
 }
