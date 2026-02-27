@@ -10,7 +10,7 @@
     "prettier": "prettier --write 'src/**/*.@(js|ts|tsx|json|css)'",
     "lint": "eslint --ext ts,tsx,js,jsx src",
     "test": "jest",
-    "check": "npm run prettier && npm run lint && npm run tsc && npm test",
+    "check": "npm run prettier && npm run lint && npx tsc && npm test",
     "build": "rimraf dist && tsc"
   },
   "repository": "git+https://github.com/launchdarkly/jest-launchdarkly-mock.git",

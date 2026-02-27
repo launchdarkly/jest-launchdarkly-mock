@@ -10,18 +10,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '16.x'
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - uses: actions/cache@v4
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - run: yarn install --immutable --immutable-cache
-      - run: yarn lint
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint
   tsc:
     runs-on: ubuntu-latest
     name: Check typescript
@@ -30,18 +21,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '16.x'
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - uses: actions/cache@v4
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - run: yarn install --immutable --immutable-cache
-      - run: yarn tsc
+          cache: 'npm'
+      - run: npm ci
+      - run: npx tsc
   test:
     runs-on: ubuntu-latest
     name: Run tests
@@ -51,16 +33,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '16.x'
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - uses: actions/cache@v4
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - run: CYPRESS_INSTALL_BINARY=0 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --immutable --immutable-cache
-      - run: yarn build
-      - run: yarn test
+          cache: 'npm'
+      - run: CYPRESS_INSTALL_BINARY=0 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
+      - run: npm run build
+      - run: npm test

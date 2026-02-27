@@ -65,14 +65,6 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
-.yarn-integrity
-
-# Yarn Berry artifacts (project now uses npm)
-.yarn/
-.yarnrc.yml
-yarn.lock
-
 # dotenv environment variables file
 .env
 .env.test
