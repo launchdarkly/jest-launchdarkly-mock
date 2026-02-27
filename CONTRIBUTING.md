@@ -19,11 +19,11 @@ Development
 ------------------
  
 ### Installation
- 
+
 ```bash
-yarn
+npm install
 ```
-  
+
 ### Testing
 You can run unit tests or use the mock package in the [example app](https://github.com/launchdarkly/jest-launchdarkly-mock/tree/master/example)
 included in this package.
@@ -31,20 +31,20 @@ included in this package.
 #### Unit tests
 
 ```bash
-yarn test
-``` 
+npm test
+```
 
 #### Test in example app
 You can run the mocks in the [example app](https://github.com/launchdarkly/jest-launchdarkly-mock/tree/master/example)
 by doing the following:
 
 1. Build the mock package and copy output to the example app:
- 
+
     ```bash
-    yarn prep-dev
-    ``` 
+    npm run prep-dev
+    ```
 
 2. Running unit tests in the example app:
     ```
-    cd example && yarn test
+    cd example && npm test
     ```

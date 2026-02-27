@@ -68,9 +68,10 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# Yarn PnP for zero install workspaces
-.yarn/install-state.gz
-.yarn/unplugged
+# Yarn Berry artifacts (project now uses npm)
+.yarn/
+.yarnrc.yml
+yarn.lock
 
 # dotenv environment variables file
 .env
@@ -110,6 +111,5 @@ dist
 .idea/
 .DS_Store
 
-package-lock.json
 
 example/dist
