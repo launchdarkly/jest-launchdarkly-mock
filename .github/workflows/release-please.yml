@@ -35,6 +35,6 @@ jobs:
         with:
           node-version: 'lts/*'
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn install --immutable
-      - run: yarn build
+      - run: npm ci
+      - run: npm run build
       - run: npm publish --provenance --access public

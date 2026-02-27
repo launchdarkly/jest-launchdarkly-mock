@@ -65,13 +65,6 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
-.yarn-integrity
-
-# Yarn PnP for zero install workspaces
-.yarn/install-state.gz
-.yarn/unplugged
-
 # dotenv environment variables file
 .env
 .env.test
@@ -110,6 +103,5 @@ dist
 .idea/
 .DS_Store
 
-package-lock.json
 
 example/dist
