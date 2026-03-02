@@ -5,6 +5,13 @@ All notable changes to the jest-launchdarkly-mock package will be documented in 
 [Semantic Versioning](https://semver.org).
 
 
+## [2.2.1](https://github.com/launchdarkly/jest-launchdarkly-mock/compare/jest-launchdarkly-mock-v2.2.0...jest-launchdarkly-mock-v2.2.1) (2026-03-02)
+
+
+### Bug Fixes
+
+* adding initialize mock ([#100](https://github.com/launchdarkly/jest-launchdarkly-mock/issues/100)) ([03e6798](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/03e67986a2a95c4bfc534266c5a4da6d288e0af1))
+
 ## [2.2.0](https://github.com/launchdarkly/jest-launchdarkly-mock/compare/jest-launchdarkly-mock-v2.1.0...jest-launchdarkly-mock-v2.2.0) (2026-02-25)
 
 
