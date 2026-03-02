@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react-hooks'
-import { useFlags, useLDClient, useLDClientError, LDProvider, asyncWithLDProvider } from 'launchdarkly-react-client-sdk'
+import { initialize, useFlags, useLDClient, useLDClientError, LDProvider, asyncWithLDProvider } from 'launchdarkly-react-client-sdk'
 import { mockFlags, ldClientMock, resetLDMocks } from './index'
 
 describe('main', () => {
@@ -114,6 +114,11 @@ describe('main', () => {
     } = renderHook(() => useFlags())
 
     expect(current).toEqual({})
+  })
+
+  test('mock initialize correctly', () => {
+    const client = initialize('test-client-id', { key: 'user-key', kind: 'user' })
+    expect(client).toBe(ldClientMock)
   })
 
   test('reset ldClientMock ', () => {
