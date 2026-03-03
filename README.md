@@ -10,7 +10,7 @@
 
 > [!CAUTION]
 > This package is only compatible with the [Launchdarkly React SDK](https://www.npmjs.com/package/launchdarkly-react-client-sdk).
-> The team is actively working on a new major version of the React SDK over at our
+> The team is actively working on a new major version of the React SDK in our
 > [js-core monorepo](https://github.com/launchdarkly/js-core/tree/main/packages/sdk/react). At this time,
 > we are **NOT** planning to update this package to be compatible with the new major version.
 
