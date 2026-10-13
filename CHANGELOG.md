@@ -5,6 +5,13 @@ All notable changes to the jest-launchdarkly-mock package will be documented in 
 [Semantic Versioning](https://semver.org).
 
 
+## [2.2.2](https://github.com/launchdarkly/jest-launchdarkly-mock/compare/jest-launchdarkly-mock-v2.2.1...jest-launchdarkly-mock-v2.2.2) (2026-10-13)
+
+
+### Bug Fixes
+
+* bump vulnerable dependencies (js-yaml, ws, flatted, browserslist, brace-expansion, picomatch, uuid, baseline-browser-mapping) ([#113](https://github.com/launchdarkly/jest-launchdarkly-mock/issues/113)) ([a7f7e8e](https://github.com/launchdarkly/jest-launchdarkly-mock/commit/a7f7e8e85fcd5eced59e5e825049a1e43ba5c3c0))
+
 ## [2.2.1](https://github.com/launchdarkly/jest-launchdarkly-mock/compare/jest-launchdarkly-mock-v2.2.0...jest-launchdarkly-mock-v2.2.1) (2026-03-02)
 
 
